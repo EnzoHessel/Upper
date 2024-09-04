@@ -16,7 +16,13 @@ export default function ImageWithTextSection({
     <>
       <div className={styles.imageWithTextContainer}>
         <div className={styles.cardImage}>
-          <Image width={336} height={356} src={image} alt={title} />
+          <Image
+            width={336}
+            height={356}
+            src={image}
+            alt={title}
+            quality={100}
+          />
         </div>
         <div className={styles.cardText}>
           <h2 className="text-primary-foreground">{title}</h2>

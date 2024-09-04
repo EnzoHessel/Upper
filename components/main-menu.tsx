@@ -15,6 +15,7 @@ export default function MainMenu() {
           alt="logo"
           width={119}
           height={100}
+          quality={100}
         />
         <div className={styles.buttonsContainer}>
           <Button variant={'link'} className="p-0">
