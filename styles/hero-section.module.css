@@ -1,0 +1,38 @@
+.heroSectionContainer {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  @apply gap-6;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  @apply gap-8;
+}
+
+@media screen and (max-width: 1024px) {
+  .heroSectionContainer {
+    @apply gap-6;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    @apply gap-8;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroSectionContainer {
+    @apply gap-6;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @apply gap-4;
+  }
+}

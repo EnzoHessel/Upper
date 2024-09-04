@@ -1,4 +1,5 @@
 .mainMenuContainer {
+  z-index: 49;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -42,23 +43,6 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .mainMenuContent {
-    margin: 0 16px;
-  }
-  .buttonsContainer {
-    display: none;
-  }
-  .buttonAbrirConta {
-    display: block;
-  }
-  .hamburguerMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 400px) {
   .mainMenuContent {
     margin: 0 16px;
   }

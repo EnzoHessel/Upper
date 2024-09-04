@@ -1,23 +1,31 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { NextIntlClientProvider } from "next-intl";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { ThemeProvider } from "@/components/theme-provider"
-import TopMenu from "@/components/top-menu";
-import MainMenu from "@/components/main-menu";
+import { ThemeProvider } from '@/components/theme-provider';
+import TopMenu from '@/components/top-menu';
+import MainMenu from '@/components/main-menu';
+import { Faq } from '@/components/faq';
+import Footer from '@/components/footer';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export async function generateMetadata({
-  params: { locale }
+  params: { locale },
 }: Readonly<{
   params: { locale: string | any };
 }>): Promise<Metadata> {
   const messages = await getMessages(locale);
 
-  const title = typeof messages['metadata.title'] === 'string' ? messages['metadata.title'] : 'Default Title';
-  const description = typeof messages['metadata.description'] === 'string' ? messages['metadata.description'] : 'Default Description';
+  const title =
+    typeof messages['metadataTitle'] === 'string'
+      ? messages['metadataTitle']
+      : 'Default Title';
+  const description =
+    typeof messages['metadataDescription'] === 'string'
+      ? messages['metadataDescription']
+      : 'Default Description';
 
   return {
     title,
@@ -27,12 +35,11 @@ export async function generateMetadata({
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: Readonly<{
   children: React.ReactNode;
   params: { locale: string | any };
 }>) {
-
   const messages = await getMessages(params.locale);
   return (
     <html lang={params.locale}>
@@ -46,13 +53,19 @@ export default async function RootLayout({
           <NextIntlClientProvider messages={messages}>
             <header>
               <TopMenu />
-              <MainMenu />
             </header>
-            <main className={"containerPrincipal"}>
-              <section className={"contentPrincipal"}>
+            <nav className="sticky top-0">
+              <MainMenu />
+            </nav>
+            <main className={'containerPrincipal'}>
+              <section className={'contentPrincipal'}>
                 {children}
+                <Faq />
               </section>
             </main>
+            <footer className={'footerContainer'}>
+              <Footer />
+            </footer>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

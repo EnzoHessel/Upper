@@ -33,7 +33,8 @@
   .dark {
     --background: 0 0% 7%;
     --foreground: 0 0% 15%;
-    --secondary-content: 0 0% 42%;
+    --foreground-2: 0 0% 17%;
+    --secondary-content: 0 0% 62%;
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
@@ -115,15 +116,24 @@ span {
 .containerPrincipal {
   display: flex;
   justify-content: center;
+  @apply mt-16;
 }
 
 .contentPrincipal {
   width: 1000px;
+  display: flex;
+  flex-direction: column;
+  @apply gap-16;
+}
+
+.footerContainer {
+  margin-top: 64px;
 }
 
 @media screen and (max-width: 1024px) {
   .contentPrincipal {
     margin: 0 64px;
+    width: 100%;
   }
 
   h1 {
@@ -159,6 +169,7 @@ span {
 @media screen and (max-width: 768px) {
   .contentPrincipal {
     margin: 0 16px;
+    width: 100%;
   }
 
   h1 {

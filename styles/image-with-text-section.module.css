@@ -1,0 +1,87 @@
+.imageWithTextContainer {
+  display: flex;
+  width: 100%;
+}
+
+.cardImage {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(var(--foreground-2));
+  padding: 32px;
+  width: 400px;
+  height: 420px;
+  border-radius: 8px 0 0 8px;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  justify-content: center;
+  background-color: hsl(var(--foreground));
+  width: 600px;
+  height: 420px;
+  border-radius: 0 8px 8px 0;
+  @apply gap-6;
+}
+
+@media screen and (max-width: 1024px) {
+  .imageWithTextContainer {
+    display: flex;
+    width: 100%;
+    @apply mx-4;
+  }
+
+  .cardImage {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(var(--foreground-2));
+    padding: 32px;
+    width: 344px;
+    height: 360px;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .cardText {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    justify-content: center;
+    background-color: hsl(var(--foreground));
+    width: 100%;
+    height: 360px;
+    border-radius: 0 8px 8px 0;
+    @apply gap-6;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imageWithTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @apply mx-0;
+  }
+
+  .cardImage {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(var(--foreground-2));
+    padding: 32px;
+    width: 100%;
+    height: 420px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .cardText {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    justify-content: center;
+    background-color: hsl(var(--foreground));
+    width: 100%;
+    height: 420px;
+    border-radius: 0 0 8px 8px;
+    @apply gap-6;
+  }
+}
