@@ -130,6 +130,11 @@ span {
   margin-top: 64px;
 }
 
+.layoutWrapper {
+  display: flex;
+  flex-direction: column; /* Permite que o nav e o main se ajustem em coluna */
+}
+
 @media screen and (max-width: 1024px) {
   .contentPrincipal {
     margin: 0 64px;

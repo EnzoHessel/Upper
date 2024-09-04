@@ -8,7 +8,7 @@ export default function Home() {
   const t = useTranslations('HomePage');
 
   return (
-    <main className={styles.homePageContainer}>
+    <div className={styles.homePageContainer}>
       <section>
         <HeroSection
           title={t('HeroSection.title')}
@@ -39,6 +39,6 @@ export default function Home() {
           />
         </div>
       </section>
-    </main>
+    </div>
   );
 }

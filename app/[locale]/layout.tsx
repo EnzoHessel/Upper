@@ -54,15 +54,17 @@ export default async function RootLayout({
             <header>
               <TopMenu />
             </header>
-            <nav className="sticky top-0">
-              <MainMenu />
-            </nav>
-            <main className={'containerPrincipal'}>
-              <section className={'contentPrincipal'}>
-                {children}
-                <Faq />
-              </section>
-            </main>
+            <div className="layoutWrapper">
+              <nav className="sticky top-0 z-50">
+                <MainMenu />
+              </nav>
+              <main className={'containerPrincipal'}>
+                <section className={'contentPrincipal'}>
+                  {children}
+                  <Faq />
+                </section>
+              </main>
+            </div>
             <footer className={'footerContainer'}>
               <Footer />
             </footer>

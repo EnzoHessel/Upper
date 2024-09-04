@@ -8,7 +8,7 @@ export default function MainMenu() {
   const t = useTranslations('MainMenu');
 
   return (
-    <nav className={styles.mainMenuContainer}>
+    <div className={styles.mainMenuContainer}>
       <div className={styles.mainMenuContent}>
         <Image
           src={'logo-horizontal-upper.svg'}
@@ -40,6 +40,6 @@ export default function MainMenu() {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
