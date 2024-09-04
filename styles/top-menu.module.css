@@ -1,0 +1,25 @@
+.topMenuContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: hsl(var(--primary-foreground));
+    color: hsl(var(--terciary));
+    @apply py-2;
+}
+
+.topMenuContent{
+    width: 1000px;
+    display: flex;
+    @apply gap-8;
+}
+
+@media screen and (max-width: 1024px){
+    .topMenuContainer{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .topMenuContainer{
+      display: none;
+    }
+  }
