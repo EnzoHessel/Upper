@@ -1,0 +1,22 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px;
+  background-color: hsl(var(--foreground));
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid hsl(var(--secondary-content));
+  @apply gap-2;
+}
+
+.imageContainer {
+  background-color: hsl(var(--background));
+  padding: 12px;
+  border: 1px solid hsl(var(--secondary-content));
+  border-radius: 100%;
+  display: flex;
+  justify-items: center;
+}

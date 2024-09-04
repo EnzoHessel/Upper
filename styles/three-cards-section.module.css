@@ -1,0 +1,20 @@
+.cardsContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  @apply gap-4;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}

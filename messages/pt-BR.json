@@ -77,6 +77,24 @@
     "BemVindoAoUpper": {
       "title": "Bem-vindo ao Upper",
       "description": "No Upper, acreditamos que o futuro das finanças é digital e acessível a todos. Somos um banco digital inovador, criado com o propósito de transformar a maneira como você gerencia seu dinheiro e investe no seu futuro. Combinando tecnologia de ponta e uma abordagem centrada no cliente, oferecemos uma plataforma completa de serviços financeiros e educação para empoderar você a tomar as melhores decisões financeiras."
+    },
+    "UmaExperienciaTransparente": {
+      "title": "Uma experiência transparente",
+      "card1": {
+        "title": "Serviços Bancários Completos",
+        "description": "Com a nossa conta digital, você pode realizar todas as suas transações financeiras de maneira simples e segura. Desde pagamentos e transferências até gerenciamento de contas, nossa plataforma está preparada para atender todas as suas necessidades bancárias diárias. Venha ser Upper agora mesmo!"
+      },
+      "card2": {
+        "title": "Investimentos Diversificados",
+        "description": "Oferecemos uma wallet de investimentos robusta, onde você pode diversificar seu portfólio com criptomoedas, CCBs e NCs. Nossa plataforma é projetada para ser intuitiva e acessível, permitindo que tanto investidores iniciantes quanto experientes possam investir com confiança."
+      }
+    },
+    "JunteSeANos": {
+      "title": "Resolva sua vida financeira em poucos cliques",
+      "card": {
+        "title": "Junte-se a Nós",
+        "description": "Estamos comprometidos em oferecer uma experiência financeira completa e acessível para todos. Venha fazer parte da revolução financeira com o Upper e descubra como podemos ajudá-lo a alcançar seus objetivos financeiros e investir no seu futuro com confiança."
+      }
     }
   }
 }
