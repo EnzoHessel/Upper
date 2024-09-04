@@ -17,8 +17,8 @@ export default function ImageWithTextSection({
       <div className={styles.imageWithTextContainer}>
         <div className={styles.cardImage}>
           <Image
-            width={336}
-            height={356}
+            width={1000}
+            height={1000}
             src={image}
             alt={title}
             quality={100}

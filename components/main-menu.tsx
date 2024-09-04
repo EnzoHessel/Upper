@@ -14,8 +14,8 @@ export default function MainMenu() {
           src={'logo-horizontal-upper.svg'}
           alt="logo"
           width={119}
-          height={100}
-          quality={100}
+          height={500}
+          quality={500}
         />
         <div className={styles.buttonsContainer}>
           <Button variant={'link'} className="p-0">
