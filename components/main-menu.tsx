@@ -27,15 +27,17 @@ export default function MainMenu() {
             <span>{t('ajuda')}</span>
           </Button>
         </div>
-        <Button
-          variant={'default'}
-          size={'lg'}
-          className={styles.buttonAbrirConta}
-        >
-          <span>Abrir conta</span>
-        </Button>
-        <div className={styles.hamburguerMenu}>
-          <HamburguerMenu />
+        <div className="flex justify-center items-center gap-4">
+          <Button
+            variant={'default'}
+            size={'lg'}
+            className={styles.buttonAbrirConta}
+          >
+            <span>{t('abrirConta')}</span>
+          </Button>
+          <div className={styles.hamburguerMenu}>
+            <HamburguerMenu />
+          </div>
         </div>
       </div>
     </nav>
