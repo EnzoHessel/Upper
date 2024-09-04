@@ -10,13 +10,15 @@ export default function MainMenu() {
   return (
     <div className={styles.mainMenuContainer}>
       <div className={styles.mainMenuContent}>
-        <Image
-          src={'logo-horizontal-upper.svg'}
-          alt="logo"
-          width={119}
-          height={500}
-          quality={500}
-        />
+        <div className="relative h-[37px] w-[119px]">
+          <Image
+            objectFit={'cover'}
+            src={'logo-horizontal-upper.svg'}
+            alt="logo"
+            fill
+            quality={100}
+          />
+        </div>
         <div className={styles.buttonsContainer}>
           <Button variant={'link'} className="p-0">
             <span>{t('temNoUpper')}</span>
