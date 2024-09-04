@@ -1,11 +1,27 @@
 {
-    "metadata.title": "Upper Bank",
-    "metadata.description": "O banco que te leva ao topo, sua vida financeira, simplificada e poderosa.",
-    "TopMenu":{
-        "paraVoce": "Para você",
-        "paraSuaEmpresa": "Para sua empresa"
-    },
-    "HomePage":{
-        "teste": "teste"
-    }
+  "metadata.title": "Upper Bank",
+  "metadata.description": "O banco que te leva ao topo, sua vida financeira, simplificada e poderosa.",
+  "TopMenu": {
+    "paraVoce": "Para você",
+    "paraSuaEmpresa": "Para sua empresa"
+  },
+  "MainMenu": {
+    "paraVoce": "Para você",
+    "paraSuaEmpresa": "Para sua empresa",
+    "temNoUpper": "Tem no Upper",
+    "educacaoFinanceira": "Educação financeira",
+    "ajuda": "Ajuda"
+  },
+  "HamburguerMenu": {
+    "title": "Menu",
+    "home": "Página inicial",
+    "paraVoce": "Para você",
+    "paraSuaEmpresa": "Para sua empresa",
+    "temNoUpper": "Tem no Upper",
+    "educacaoFinanceira": "Educação financeira",
+    "ajuda": "Ajuda"
+  },
+  "HomePage": {
+    "teste": "teste"
+  }
 }

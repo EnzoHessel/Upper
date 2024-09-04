@@ -5,6 +5,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    --secondary-content: 0 0% 42%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
@@ -27,7 +28,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
+    --radius: 0.5rem;
   }
   .dark {
     --background: 0 0% 7%;
@@ -56,7 +57,7 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --chart-5: 340 75% 55%;
   }
 }
 @layer base {
@@ -69,28 +70,124 @@
   }
 }
 
-span{
-  font-size: 14px;
-  line-height: 140%;
+h1 {
+  font-size: 48px;
+  line-height: 100%;
   font-weight: 600;
 }
 
-.containerPrincipal{
+h2 {
+  font-size: 36px;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+span {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 500;
+}
+
+.containerPrincipal {
   display: flex;
   justify-content: center;
 }
 
-.contentPrincipal{
+.contentPrincipal {
   width: 1000px;
 }
 
-@media screen and (max-width: 1024px){
-  .contentPrincipal{
+@media screen and (max-width: 1024px) {
+  .contentPrincipal {
     margin: 0 64px;
   }
+
+  h1 {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 500;
+  }
 }
-@media screen and (max-width: 768px){
-  .contentPrincipal{
+@media screen and (max-width: 768px) {
+  .contentPrincipal {
     margin: 0 16px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 500;
   }
 }

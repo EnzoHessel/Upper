@@ -1,55 +1,55 @@
-.mainMenuContainer{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: hsl(var(--foreground));
-    border-bottom: 0.1rem solid hsl(var(--secondary-content));
-    color: hsl(var(--primary-foreground));
-    @apply py-5;
+.mainMenuContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: hsl(var(--foreground));
+  border-bottom: 0.1rem solid hsl(var(--secondary-content));
+  color: hsl(var(--primary-foreground));
+  @apply py-5;
 }
 
-.mainMenuContent{
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
+.mainMenuContent {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
 }
 
-.buttonsContainer{
-    display: flex;
-    @apply gap-12;
+.buttonsContainer {
+  display: flex;
+  @apply gap-12;
 }
 
-.hamburguerMenu{
+.hamburguerMenu {
   display: none;
 }
 
-@media screen and (max-width: 1024px){
-    .mainMenuContent{
-      margin: 0 64px;
-    }
-    .buttonsContainer{
-      display: none;
-    }
-    .buttonAbrirConta{
-      display: none;
-    }
-    .hamburguerMenu{
-      display: block;
-    }
+@media screen and (max-width: 1024px) {
+  .mainMenuContent {
+    margin: 0 64px;
   }
-  @media screen and (max-width: 768px){
-    .mainMenuContent{
-      margin: 0 16px;
-    }
-    .buttonsContainer{
-        display: none;
-    }
-    .buttonAbrirConta{
-      display: none;
-    }
-    .hamburguerMenu{
-      display: block;
-    }
+  .buttonsContainer {
+    display: none;
   }
+  .buttonAbrirConta {
+    display: none;
+  }
+  .hamburguerMenu {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainMenuContent {
+    margin: 0 16px;
+  }
+  .buttonsContainer {
+    display: none;
+  }
+  .buttonAbrirConta {
+    display: none;
+  }
+  .hamburguerMenu {
+    display: block;
+  }
+}
