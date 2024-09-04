@@ -21,7 +21,7 @@ export default function Home() {
         <ImageWithTextSection
           title={t('BemVindoAoUpper.title')}
           description={t('BemVindoAoUpper.description')}
-          image={'bem-vindo-ao-upper.svg'}
+          image={'/bem-vindo-ao-upper-iphones.png'}
         />
       </section>
       <section>
