@@ -22,13 +22,13 @@ export default function ThreeCardsSection() {
           />
           <Card
             Icon={ChartBarIcon}
-            title={t('card1.title')}
-            description={t('card1.description')}
+            title={t('card2.title')}
+            description={t('card2.description')}
           />
           <Card
             Icon={CurrencyDollarIcon}
-            title={t('card1.title')}
-            description={t('card1.description')}
+            title={t('card3.title')}
+            description={t('card3.description')}
           />
         </div>
       </div>
