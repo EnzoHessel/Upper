@@ -125,6 +125,25 @@
         "title": "Junte-se a Nós",
         "description": "Estamos comprometidos em oferecer uma experiência financeira completa e acessível para todos. Venha fazer parte da revolução financeira com o Upper e descubra como podemos ajudá-lo a alcançar seus objetivos financeiros e investir no seu futuro com confiança."
       }
+    },
+    "card": {
+      "title": "Uma experiência transparente.",
+      "card1": {
+        "title": "Abertura de Conta Simplificada",
+        "description": "Abra a conta da sua empresa de forma rápida e sem complicações, diretamente pelo nosso aplicativo, evitando burocracias e filas."
+      },
+      "card2": {
+        "title": "Pagamentos e Transferências",
+        "description": "Realize pagamentos de fornecedores, folha de pagamento e transferências entre contas Upper e outros bancos, tudo de maneira ágil e segura."
+      },
+      "card3": {
+        "title": "Cartão Empresarial",
+        "description": "Receba cartões de débito e crédito para os gestores e colaboradores, facilitando o controle das despesas corporativas."
+      },
+      "card4": {
+        "title": "Controle Financeiro",
+        "description": "Utilize nossa plataforma para monitorar suas transações em tempo real, gerenciar saldos e fluxos de caixa, garantindo uma visão clara das finanças da sua empresa."
+      }
     }
   },
   "Footer": {

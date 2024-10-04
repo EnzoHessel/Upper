@@ -2,10 +2,39 @@ import { useTranslations } from 'next-intl';
 import styles from '@/styles/home-page.module.css';
 import HeroSection from '@/components/hero-section';
 import ImageWithTextSection from '@/components/image-with-text-section';
-import ThreeCardsSection from '@/components/three-cards-section';
+import CardsSection from '@/components/card-section';
+import {
+  AdjustmentsHorizontalIcon,
+  BanknotesIcon,
+  CreditCardIcon,
+  Square3Stack3DIcon,
+} from '@heroicons/react/24/outline';
 
 export default function forYou() {
   const t = useTranslations('ForYouPage');
+
+  const cardsData = [
+    {
+      Icon: Square3Stack3DIcon,
+      title: `${t("card.card1.title")}`,
+      description: `${t("card.card1.description")}`
+    },
+    {
+      Icon: BanknotesIcon,
+      title: `${t("card.card2.title")}`,
+      description: `${t("card.card2.description")}`
+    },
+    {
+      Icon: CreditCardIcon,
+      title: `${t("card.card3.title")}`,
+      description: `${t("card.card3.description")}`
+    },
+    {
+      Icon: AdjustmentsHorizontalIcon,
+      title: `${t("card.card4.title")}`,
+      description: `${t("card.card4.description")}`
+    }
+  ];
 
   return (
     <div className={styles.homePageContainer}>
@@ -26,7 +55,12 @@ export default function forYou() {
         />
       </section>
       <section>
-        <ThreeCardsSection />
+        <div className="flex flex-col gap-8">
+          <h3 className="text-primary-foreground text-center">
+            {t('JunteSeANos.title')}
+          </h3>
+          <CardsSection cards={cardsData} />
+        </div>
       </section>
       <section>
         <ImageWithTextSection
