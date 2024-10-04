@@ -12,6 +12,12 @@
   @apply gap-4;
 }
 
+.cardContainer:hover {
+  border-color: hsl(var(--primary));
+  transition: 500ms;
+  @apply -translate-y-0.5;
+}
+
 .imageContainer {
   background-color: hsl(var(--background));
   padding: 12px;

@@ -10,14 +10,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'uppercase bg-primary text-background shadow hover:bg-primary-foreground active:bg-primary-foreground/10 focus:outline-none focus:ring focus:primary/80',
+          'uppercase bg-primary text-background shadow hover:bg-[hsl(var(--hover))] active:bg-primary-foreground/10 focus:outline-none focus:ring focus:primary/80',
         secondary:
           'uppercase bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 active:bg-secondary-foreground/10 focus:outline-none focus:ring ring-secondary/50 focus:secondary/80',
         outline:
           'uppercase text-primary-foreground border border-primary bg-background shadow-sm hover:bg-primary/80 hover:text-primary-foreground active:bg-primary-foreground/10 focus:outline-none focus:ring focus:primary/80',
         link: 'uppercase text-terciary underline-offset-4 hover:underline',
         ghost:
-          'uppercase text-primary-foreground hover:bg-primary/80 hover:text-primary-foreground active:bg-primary-foreground/10 focus:outline-none focus:ring focus:primary/80',
+          'uppercase text-primary-foreground hover:bg-[hsl(var(--primary))] hover:text-background active:bg-primary-foreground/10 focus:outline-none focus:ring focus:primary/80',
         destructive:
           'uppercase bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90 active:bg-destructive-foreground/10 focus:outline-none focus:ring focus:primary/80',
       },
