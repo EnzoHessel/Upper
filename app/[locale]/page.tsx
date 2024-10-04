@@ -3,10 +3,11 @@ import ImageWithTextSection from '@/components/image-with-text-section';
 import { useTranslations } from 'next-intl';
 import styles from '@/styles/home-page.module.css';
 import ThreeCardsSection from '@/components/three-cards-section';
+import ImageWithCarrousel from '@/components/Image-with-carrousel';
 
 export default function Home() {
   const t = useTranslations('HomePage');
-
+ 
   return (
     <div className={styles.homePageContainer}>
       <section>
@@ -21,11 +22,19 @@ export default function Home() {
         <ImageWithTextSection
           title={t('BemVindoAoUpper.title')}
           description={t('BemVindoAoUpper.description')}
-          image={'/bem-vindo-ao-upper-iphones.png'}
+          image={'bem-vindo-ao-upper-iphones.png'}
+          className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
       </section>
       <section>
         <ThreeCardsSection />
+      </section>
+      <section>
+        <ImageWithCarrousel
+          title={t('Solucoes.card.title')}
+          description={t('Solucoes.card.description')}
+          images={['Carrousel/phone-1.svg', 'Carrousel/phone-2.svg', 'Carrousel/phone-3.svg']}
+        />
       </section>
       <section>
         <div className="flex flex-col gap-8">

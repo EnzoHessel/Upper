@@ -39,8 +39,9 @@
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 211 100% 50%;
+    --primary: 51, 100%, 50%;
     --primary-foreground: 0 0% 88%;
+    --primary-foreground-2: 0 0% 80%;
     --secondary: 51 100% 50%;
     --secondary-foreground: 0 0% 20%;
     --terciary: 0 0% 20%;
@@ -59,6 +60,7 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --radius: 0.5rem;
   }
 }
 @layer base {
@@ -68,6 +70,7 @@
   body {
     @apply bg-background text-foreground w-screen h-screen;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 }
 
@@ -124,6 +127,13 @@ span {
   display: flex;
   flex-direction: column;
   @apply gap-16;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .footerContainer {
@@ -206,4 +216,19 @@ span {
     line-height: 140%;
     font-weight: 500;
   }
+}
+/* Estilo do swipper ta aqui por que eu quis e não consegui colocar no module não gostou arruma */
+
+.swiper-pagination {
+  position: initial !important;
+}
+
+.swiper-pagination-bullet {
+  background: hsl(var(--primary-foreground)) !important;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: hsl(var(--primary-foreground)) !important;
 }

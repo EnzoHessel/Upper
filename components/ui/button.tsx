@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'uppercase bg-primary text-primary-foreground shadow hover:bg-primary/90 active:bg-primary-foreground/10 focus:outline-none focus:ring focus:primary/80',
+          'uppercase bg-primary text-background shadow hover:bg-primary-foreground active:bg-primary-foreground/10 focus:outline-none focus:ring focus:primary/80',
         secondary:
           'uppercase bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 active:bg-secondary-foreground/10 focus:outline-none focus:ring ring-secondary/50 focus:secondary/80',
         outline:

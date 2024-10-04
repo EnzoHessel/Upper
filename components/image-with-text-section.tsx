@@ -1,10 +1,11 @@
-import styles from '@/styles/image-with-text-section.module.css';
 import Image from 'next/image';
+import styles from '@/styles/image-with-text-section.module.css';
 
 type ImageWithTextSectionProps = {
   title: string;
   description: string;
   image: string;
+  className?: string;
 };
 
 export default function ImageWithTextSection({
@@ -13,26 +14,16 @@ export default function ImageWithTextSection({
   image,
 }: ImageWithTextSectionProps) {
   return (
-    <>
-      <div className={styles.imageWithTextContainer}>
-        <div className={styles.cardImage}>
-          <div className="relative h-full w-full">
-            <Image
-              fill
-              objectFit={'cover'}
-              src={image}
-              alt={title}
-              quality={100}
-            />
-          </div>
-        </div>
-        <div className={styles.cardText}>
-          <h2 className="text-primary-foreground">{title}</h2>
-          <span className="text-[hsl(var(--secondary-content))]">
-            {description}
-          </span>
+    <div className={styles.imageWithTextSection}>
+      <div className={styles.imageSection}>
+        <div className={styles.imageContainer}>
+          <Image src={`/${image}`} alt={title} layout="fill" objectFit="contain" />
         </div>
       </div>
-    </>
+      <div className={styles.textSection}>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.description}>{description}</p>
+      </div>
+    </div>
   );
 }

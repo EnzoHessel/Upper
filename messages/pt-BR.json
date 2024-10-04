@@ -99,6 +99,59 @@
         "title": "Junte-se a Nós",
         "description": "Estamos comprometidos em oferecer uma experiência financeira completa e acessível para todos. Venha fazer parte da revolução financeira com o Upper e descubra como podemos ajudá-lo a alcançar seus objetivos financeiros e investir no seu futuro com confiança."
       }
+    },
+    "Solucoes": {
+      "title": "Soluções Upper",
+      "card": {
+        "title": "Soluções na palma da sua mão.",
+        "description": "Um app completo com diversificação de investimento, transações e pagamentos. Segurança e versatilidade em apenas alguns toques. "
+      }
     }
+  },
+  "ForYouPage": {
+    "HeroSection": {
+      "title": "Educar, Poupar, Investir",
+      "description": "Transforme conhecimento em riqueza",
+      "primaryButton": "Abrir conta",
+      "ghostButton": "Baixe o nosso app"
+    },
+    "ForYou":{
+      "title": "Conta Digital para Transações Simples e Rápidas",
+      "description": "A nossa conta digital é a base da sua experiência com a Upper. Projetada para ser simples, segura e conveniente, ela oferece tudo o que você precisa para gerenciar suas finanças diárias:"
+    },
+    "JunteSeANos": {
+      "title": "Resolva sua vida financeira em poucos cliques",
+      "card": {
+        "title": "Junte-se a Nós",
+        "description": "Estamos comprometidos em oferecer uma experiência financeira completa e acessível para todos. Venha fazer parte da revolução financeira com o Upper e descubra como podemos ajudá-lo a alcançar seus objetivos financeiros e investir no seu futuro com confiança."
+      }
+    }
+  },
+  "Footer": {
+    "description": "Simplificando finanças, empoderando pessoas.",
+    "download": "Baixe o App e abra sua conta!",
+    "informacoes": {
+      "title": "Informações",
+      "Privacidade": "Política de Privacidade",
+      "Segurança": "Política de Segurança",
+      "Financeiros": "Relatóros Financeiros",
+      "sac": "SAC / Proteção de dados"
+    },
+    "Empresa": {
+      "title": "Empresa",
+      "Sobre": "Sobre o Upper",
+      "Carreiras": "Carreiras"
+    },
+    "Comunicação": {
+      "title": "Comunicação",
+      "Central": "Central",
+      "numCentral": "0800 400 1400",
+      "atendimento": "Atendimento",
+      "AtendimentoEmail": "atendimento@upper.com.br",
+      "Sugestoes": "Sugestões",
+      "SugestoesEmail": "ouvidoria@upper.com.br"
+    },
+    "segundaDescription" : "Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo prejudicar ordens, negociações ou a recepção de informações atualizadas. O Upper, exime-se de responsabilidade por danos sofridos por seus clientes, por força de falha de serviços disponibilizados por terceiros, incluindo, sem limitação aqueles conexos à rede mundial de computadores.Todos os elementos que compõem este site, incluindo, mas não se limitando, as suas marcas, sinais de propaganda, textos, fotos e outras imagens, são propriedade e objeto de direitos exclusivos de seus respectivos titulares e/ou licenciados. A reprodução destes elementos sem prévia autorização dos respectivos proprietários e/ou licenciados constitui ou pode vir a constituir violação de propriedade intelectual, sujeitando os infratores às penalidades cabíveis na legislação civil e penal. Caso tenha interesse em utilizar algum dos elementos contidos neste site, entre em contato com o Upper.",
+    "CopyRight": "© 2024 Upper. Todos os direitos reservados"
   }
 }

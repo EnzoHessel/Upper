@@ -1,22 +1,26 @@
+"use client";
+
 import styles from '@/styles/main-menu.module.css';
 import { Button } from './ui/button';
 import Image from 'next/image';
 import HamburguerMenu from './hamburguer-menu';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function MainMenu() {
   const t = useTranslations('MainMenu');
+  const locale = useLocale();
 
   return (
     <div className={styles.mainMenuContainer}>
       <div className={styles.mainMenuContent}>
-        <div className="relative h-[37px] w-[119px]">
+        <div className="relative h-[37px] w-[119px] cursor-pointer" onClick={() => window.location.href = `/${locale}`}>
           <Image
             objectFit={'cover'}
-            src={'logo-horizontal-upper.svg'}
+            src={'/logo-horizontal-upper.svg'}
             alt="logo"
             fill
             quality={100}
+            priority
           />
         </div>
         <div className={styles.buttonsContainer}>
