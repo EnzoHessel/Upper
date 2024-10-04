@@ -144,6 +144,22 @@
         "title": "Controle Financeiro",
         "description": "Utilize nossa plataforma para monitorar suas transações em tempo real, gerenciar saldos e fluxos de caixa, garantindo uma visão clara das finanças da sua empresa."
       }
+    },
+    "card2": {
+      "title": "Cursos Profissionalizantes na Plataforma do CEBRAC",
+      "description": "Em parceria com o CEBRAC, uma das principais instituições de ensino profissionalizante do Brasil, oferecemos uma ampla gama de cursos que vão além da educação financeira, ajudando você a se capacitar e se destacar no mercado de trabalho:",
+      "card1": {
+        "title": "Educação Financeira",
+        "description": "Aprenda a gerenciar suas finanças pessoais, planejar investimentos e construir um futuro financeiro sólido com nossos cursos especializados em educação financeira."
+      },
+      "card2": {
+        "title": "Desenvolvimento Profissional",
+        "description": "Participe de cursos em áreas como tecnologia, administração, marketing e muito mais, desenvolvendo habilidades que são altamente demandadas no mercado de trabalho."
+      },
+      "card3": {
+        "title": "Certificação e Reconhecimento",
+        "description": "Obtenha certificações reconhecidas pelo mercado ao concluir nossos cursos, aumentando suas qualificações e potencial de empregabilidade."
+      }
     }
   },
   "Footer": {

@@ -91,7 +91,7 @@ export function Faq() {
               <span>{t('9.answer')}</span>
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-10">
+          <AccordionItem value="item-10" className='border-none'>
             <AccordionTrigger>
               <h6>{t('10.question')}</h6>
             </AccordionTrigger>

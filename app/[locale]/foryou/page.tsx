@@ -5,10 +5,14 @@ import ImageWithTextSection from '@/components/image-with-text-section';
 import CardsSection from '@/components/card-section';
 import {
   AdjustmentsHorizontalIcon,
+  ArrowTrendingDownIcon,
   BanknotesIcon,
   CreditCardIcon,
+  CurrencyDollarIcon,
+  DocumentCheckIcon,
   Square3Stack3DIcon,
 } from '@heroicons/react/24/outline';
+import ThreeCardsSection from '@/components/three-cards-section';
 
 export default function forYou() {
   const t = useTranslations('ForYouPage');
@@ -36,6 +40,24 @@ export default function forYou() {
     }
   ];
 
+  const cardsData2 = [
+    {
+      Icon: CurrencyDollarIcon,
+      title: `${t("card2.card1.title")}`,
+      description: `${t("card2.card1.description")}`
+    },
+    {
+      Icon: ArrowTrendingDownIcon,
+      title: `${t("card2.card2.title")}`,
+      description: `${t("card2.card2.description")}`
+    },
+    {
+      Icon: DocumentCheckIcon,
+      title: `${t("card2.card3.title")}`,
+      description: `${t("card2.card3.description")}`
+    },
+  ];
+
   return (
     <div className={styles.homePageContainer}>
       <section>
@@ -60,6 +82,15 @@ export default function forYou() {
             {t('JunteSeANos.title')}
           </h3>
           <CardsSection cards={cardsData} />
+        </div>
+      </section>
+      <section>
+        <div className="flex flex-col gap-8">
+          <h3 className="text-primary-foreground text-center">
+            {t('card2.title')}
+          </h3>
+          <span className="text-[hsl(var(--secondary-content))] text-center">{t('card2.description')}</span>
+          <ThreeCardsSection cards={cardsData2}/>
         </div>
       </section>
       <section>

@@ -4,9 +4,32 @@ import { useTranslations } from 'next-intl';
 import styles from '@/styles/home-page.module.css';
 import ThreeCardsSection from '@/components/three-cards-section';
 import ImageWithCarrousel from '@/components/Image-with-carrousel';
+import {
+  BuildingLibraryIcon,
+  ChartBarIcon,
+  CurrencyDollarIcon,
+} from '@heroicons/react/24/outline';
 
 export default function Home() {
   const t = useTranslations('HomePage');
+
+  const cardsData = [
+    {
+      Icon: BuildingLibraryIcon,
+      title: `${t("UmaExperienciaTransparente.card1.title")}`,
+      description: `${t("UmaExperienciaTransparente.card1.description")}`
+    },
+    {
+      Icon: ChartBarIcon,
+      title: `${t("UmaExperienciaTransparente.card2.title")}`,
+      description: `${t("UmaExperienciaTransparente.card2.description")}`
+    },
+    {
+      Icon: CurrencyDollarIcon,
+      title: `${t("UmaExperienciaTransparente.card3.title")}`,
+      description: `${t("UmaExperienciaTransparente.card3.description")}`
+    }
+  ];
 
   return (
     <div className={styles.homePageContainer}>
@@ -27,7 +50,12 @@ export default function Home() {
         />
       </section>
       <section>
-        <ThreeCardsSection />
+        <div className="flex flex-col gap-8">
+          <h3 className="text-primary-foreground text-center">
+            {t('UmaExperienciaTransparente.title')}
+          </h3>
+          <ThreeCardsSection cards={cardsData}/>
+        </div>
       </section>
       <section>
         <ImageWithCarrousel
