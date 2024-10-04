@@ -7,7 +7,7 @@ import ImageWithCarrousel from '@/components/Image-with-carrousel';
 
 export default function Home() {
   const t = useTranslations('HomePage');
- 
+
   return (
     <div className={styles.homePageContainer}>
       <section>
@@ -33,7 +33,11 @@ export default function Home() {
         <ImageWithCarrousel
           title={t('Solucoes.card.title')}
           description={t('Solucoes.card.description')}
-          images={['Carrousel/phone-1.svg', 'Carrousel/phone-2.svg', 'Carrousel/phone-3.svg']}
+          images={[
+            'Carrousel/phone-1.svg',
+            'Carrousel/phone-2.svg',
+            'Carrousel/phone-3.svg',
+          ]}
         />
       </section>
       <section>

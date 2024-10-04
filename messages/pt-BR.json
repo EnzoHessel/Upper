@@ -115,7 +115,7 @@
       "primaryButton": "Abrir conta",
       "ghostButton": "Baixe o nosso app"
     },
-    "ForYou":{
+    "ForYou": {
       "title": "Conta Digital para Transações Simples e Rápidas",
       "description": "A nossa conta digital é a base da sua experiência com a Upper. Projetada para ser simples, segura e conveniente, ela oferece tudo o que você precisa para gerenciar suas finanças diárias:"
     },
@@ -151,7 +151,7 @@
       "Sugestoes": "Sugestões",
       "SugestoesEmail": "ouvidoria@upper.com.br"
     },
-    "segundaDescription" : "Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo prejudicar ordens, negociações ou a recepção de informações atualizadas. O Upper, exime-se de responsabilidade por danos sofridos por seus clientes, por força de falha de serviços disponibilizados por terceiros, incluindo, sem limitação aqueles conexos à rede mundial de computadores.Todos os elementos que compõem este site, incluindo, mas não se limitando, as suas marcas, sinais de propaganda, textos, fotos e outras imagens, são propriedade e objeto de direitos exclusivos de seus respectivos titulares e/ou licenciados. A reprodução destes elementos sem prévia autorização dos respectivos proprietários e/ou licenciados constitui ou pode vir a constituir violação de propriedade intelectual, sujeitando os infratores às penalidades cabíveis na legislação civil e penal. Caso tenha interesse em utilizar algum dos elementos contidos neste site, entre em contato com o Upper.",
+    "segundaDescription": "Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo prejudicar ordens, negociações ou a recepção de informações atualizadas. O Upper, exime-se de responsabilidade por danos sofridos por seus clientes, por força de falha de serviços disponibilizados por terceiros, incluindo, sem limitação aqueles conexos à rede mundial de computadores.Todos os elementos que compõem este site, incluindo, mas não se limitando, as suas marcas, sinais de propaganda, textos, fotos e outras imagens, são propriedade e objeto de direitos exclusivos de seus respectivos titulares e/ou licenciados. A reprodução destes elementos sem prévia autorização dos respectivos proprietários e/ou licenciados constitui ou pode vir a constituir violação de propriedade intelectual, sujeitando os infratores às penalidades cabíveis na legislação civil e penal. Caso tenha interesse em utilizar algum dos elementos contidos neste site, entre em contato com o Upper.",
     "CopyRight": "© 2024 Upper. Todos os direitos reservados"
   }
 }

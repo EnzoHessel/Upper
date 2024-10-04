@@ -17,7 +17,12 @@ export default function ImageWithTextSection({
     <div className={styles.imageWithTextSection}>
       <div className={styles.imageSection}>
         <div className={styles.imageContainer}>
-          <Image src={`/${image}`} alt={title} layout="fill" objectFit="contain" />
+          <Image
+            src={`/${image}`}
+            alt={title}
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
       </div>
       <div className={styles.textSection}>

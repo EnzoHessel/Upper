@@ -1,5 +1,5 @@
-import { useTranslations } from "next-intl";
-import Image from "next/image";
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 // Componente para renderizar cada seção
 interface SectionProps {
@@ -10,7 +10,9 @@ interface SectionProps {
 function Section({ title, items }: SectionProps) {
   return (
     <div className="flex flex-col gap-4">
-      <h3 className="text-sm text-[hsl(var(--secondary-content))] font-medium">{title}</h3>
+      <h3 className="text-sm text-[hsl(var(--secondary-content))] font-medium">
+        {title}
+      </h3>
       <ul className="flex flex-col gap-3">
         {items.map((item, idx) => (
           <li key={idx} className="font-medium">
@@ -37,10 +39,7 @@ const getFooterData = (t: (key: string) => string) => ({
     },
     {
       title: t('Empresa.title'),
-      items: [
-        { text: t('Empresa.Sobre') },
-        { text: t('Empresa.Carreiras') },
-      ],
+      items: [{ text: t('Empresa.Sobre') }, { text: t('Empresa.Carreiras') }],
     },
   ],
   communicationSections: [
@@ -48,8 +47,14 @@ const getFooterData = (t: (key: string) => string) => ({
       title: t('Comunicação.title'),
       items: [
         { text: t('Comunicação.Central'), text2: t('Comunicação.numCentral') },
-        { text: t('Comunicação.atendimento'), text2: t('Comunicação.AtendimentoEmail') },
-        { text: t('Comunicação.Sugestoes'), text2: t('Comunicação.SugestoesEmail') },
+        {
+          text: t('Comunicação.atendimento'),
+          text2: t('Comunicação.AtendimentoEmail'),
+        },
+        {
+          text: t('Comunicação.Sugestoes'),
+          text2: t('Comunicação.SugestoesEmail'),
+        },
       ],
     },
   ],
@@ -122,8 +127,18 @@ export default function Footer() {
 
           {/* Ícones de redes sociais */}
           <div className="flex gap-6 items-start order-1 lg:order-none">
-            <Image src="/icons/linkedin.svg" alt="LinkedIn" width={24} height={24} />
-            <Image src="/icons/facebook.svg" alt="Facebook" width={24} height={24} />
+            <Image
+              src="/icons/linkedin.svg"
+              alt="LinkedIn"
+              width={24}
+              height={24}
+            />
+            <Image
+              src="/icons/facebook.svg"
+              alt="Facebook"
+              width={24}
+              height={24}
+            />
           </div>
         </div>
       </div>

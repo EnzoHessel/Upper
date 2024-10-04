@@ -4,7 +4,6 @@ import * as React from 'react';
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
 import { MinusCircledIcon, PlusCircledIcon } from '@radix-ui/react-icons';
 
-
 import { cn } from '@/lib/utils';
 
 const Accordion = AccordionPrimitive.Root;
@@ -15,7 +14,10 @@ const AccordionItem = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <AccordionPrimitive.Item
     ref={ref}
-    className={cn('pb-6 border-b border-[hsl(var(--secondary-content))]', className)}
+    className={cn(
+      'pb-6 border-b border-[hsl(var(--secondary-content))]',
+      className
+    )}
     {...props}
   />
 ));
@@ -43,11 +45,11 @@ const AccordionTrigger = React.forwardRef<
         onClick={handleToggle}
       >
         {children}
-        {
-          isOpen
-            ? <MinusCircledIcon className="h-[26px] w-6 shrink-0 transition-transform duration-200 rotate-180" />
-            : <PlusCircledIcon className="h-[26px] w-6 shrink-0 transition-transform duration-200 rotate-0" />
-        }
+        {isOpen ? (
+          <MinusCircledIcon className="h-[26px] w-6 shrink-0 transition-transform duration-200 rotate-180" />
+        ) : (
+          <PlusCircledIcon className="h-[26px] w-6 shrink-0 transition-transform duration-200 rotate-0" />
+        )}
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

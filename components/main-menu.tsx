@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import styles from '@/styles/main-menu.module.css';
 import { Button } from './ui/button';
@@ -13,7 +13,10 @@ export default function MainMenu() {
   return (
     <div className={styles.mainMenuContainer}>
       <div className={styles.mainMenuContent}>
-        <div className="relative h-[37px] w-[119px] cursor-pointer" onClick={() => window.location.href = `/${locale}`}>
+        <div
+          className="relative h-[37px] w-[119px] cursor-pointer"
+          onClick={() => (window.location.href = `/${locale}`)}
+        >
           <Image
             objectFit={'cover'}
             src={'/logo-horizontal-upper.svg'}
