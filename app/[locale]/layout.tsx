@@ -64,10 +64,10 @@ export default async function RootLayout({
                   <Faq />
                 </section>
               </main>
+              <footer className={'footerContainer'}>
+                <Footer />
+              </footer>
             </div>
-            <footer className={'footerContainer'}>
-              <Footer />
-            </footer>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

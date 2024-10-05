@@ -132,8 +132,7 @@ span {
 
 @media screen and (max-width: 768px) {
   section {
-    padding-left: 16px;
-    padding-right: 16px;
+   
   }
 }
 
@@ -148,7 +147,7 @@ span {
 
 @media screen and (max-width: 1024px) {
   .contentPrincipal {
-    margin: 0 64px;
+    padding: 0 64px;
     width: 100%;
   }
 
@@ -184,7 +183,7 @@ span {
 }
 @media screen and (max-width: 768px) {
   .contentPrincipal {
-    margin: 0 16px;
+    padding: 0 16px;
     width: 100%;
   }
 

@@ -65,7 +65,7 @@ export default function Footer() {
   const { sections, communicationSections } = getFooterData(t);
 
   return (
-    <footer className="bg-foreground w-full pt-16 pb-60 px-8 md:px-16">
+    <footer className="bg-foreground w-full pt-16 pb-60 px-8 md:px-16 z-0">
       <div className="flex flex-wrap mx-auto w-full max-w-[1000px] text-white gap-8 md:gap-10 lg:gap-16">
         {/* Logo e Descrição */}
         <div className="flex flex-col gap-8">
