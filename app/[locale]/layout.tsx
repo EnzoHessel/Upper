@@ -64,6 +64,7 @@ export default async function RootLayout({
                   <Faq />
                 </section>
               </main>
+              {/* por algumo motivo que nao sei explicar o footer so fuciona se ele estiver nessa div nas outras ele joga o header para fora */}
               <footer className={'footerContainer'}>
                 <Footer />
               </footer>
