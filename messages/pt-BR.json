@@ -188,5 +188,73 @@
     },
     "segundaDescription": "Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo prejudicar ordens, negociações ou a recepção de informações atualizadas. O Upper, exime-se de responsabilidade por danos sofridos por seus clientes, por força de falha de serviços disponibilizados por terceiros, incluindo, sem limitação aqueles conexos à rede mundial de computadores.Todos os elementos que compõem este site, incluindo, mas não se limitando, as suas marcas, sinais de propaganda, textos, fotos e outras imagens, são propriedade e objeto de direitos exclusivos de seus respectivos titulares e/ou licenciados. A reprodução destes elementos sem prévia autorização dos respectivos proprietários e/ou licenciados constitui ou pode vir a constituir violação de propriedade intelectual, sujeitando os infratores às penalidades cabíveis na legislação civil e penal. Caso tenha interesse em utilizar algum dos elementos contidos neste site, entre em contato com o Upper.",
     "CopyRight": "© 2024 Upper. Todos os direitos reservados"
+  },
+  "ParaSuaEmpresa": {
+    "HeroSection": {
+      "title": "O Caminho Superior para Educar, Poupar e Investir",
+      "description": "Transforme conhecimento em riqueza",
+      "primaryButton": "Abrir conta",
+      "ghostButton": "Baixe o nosso app"
+    },
+    "ImageSection" :{
+      "title": "Para Sua Empresa",
+      "description": "Na Upper, entendemos que as necessidades financeiras de uma empresa são dinâmicas e exigem soluções que acompanhem o ritmo dos negócios. Por isso, desenvolvemos uma série de produtos e serviços projetados especificamente para ajudar sua empresa a crescer, investir e se desenvolver. Conheça as principais soluções que oferecemos para a sua empresa."
+    },
+    "CardBenefícios": {
+      "title": "Benefícios para sua empresa",
+      "card1": {
+        "title": "Gestão Financeira Simplificada",
+        "description": "Uma conta digital empresarial que centraliza e facilita a gestão das finanças do dia a dia."
+      },
+      "card2": {
+        "title": "Investimentos Seguros e Rentáveis",
+        "description": "Diversas opções de investimentos para maximizar os recursos da sua empresa com segurança e retorno atrativo."
+      },
+      "card3": {
+        "title": "Capacitação Profissional",
+        "description": "Acesso a cursos e treinamentos de qualidade para desenvolver as habilidades da sua equipe e impulsionar o crescimento do seu negócio."
+      }
+    },
+    "CardExperiência": {
+      "title": "Uma experiência transparente",
+      "card1": {
+        "title": "Abertura de Conta Simplificada",
+        "description": "Abra a conta da sua empresa de forma rápida e sem complicações, diretamente pelo nosso aplicativo, evitando burocracias e filas."
+      },
+      "card2": {
+        "title": "Pagamentos e Transferências",
+        "description": "Realize pagamentos de fornecedores, folha de pagamento e transferências entre contas Upper e outros bancos, tudo de maneira ágil e segura."
+      },
+      "card3": {
+        "title": "Cartão Empresarial",
+        "description": "Receba cartões de débito e crédito para os gestores e colaboradores, facilitando o controle das despesas corporativas."
+      },
+      "card4": {
+        "title": "Controle Financeiro",
+        "description": "Utilize nossa plataforma para monitorar suas transações em tempo real, gerenciar saldos e fluxos de caixa, garantindo uma visão clara das finanças da sua empresa."
+      }
+    },
+    "CardCursos":{
+      "title": "Cursos Profissionalizantes na Plataforma do CEBRAC",
+      "description": "Em parceria com o CEBRAC, uma das principais instituições de ensino profissionalizante do Brasil, oferecemos uma ampla gama de cursos que vão além da educação financeira, ajudando você a se capacitar e se destacar no mercado de trabalho:",
+      "card1": {
+        "title": "Educação Financeira",
+        "description": "Aprenda a gerenciar suas finanças pessoais, planejar investimentos e construir um futuro financeiro sólido com nossos cursos especializados em educação financeira."
+      },
+      "card2": {
+        "title": "Desenvolvimento Profissional",
+        "description": "Participe de cursos em áreas como tecnologia, administração, marketing e muito mais, desenvolvendo habilidades que são altamente demandadas no mercado de trabalho."
+      },
+      "card3": {
+        "title": "Certificação e Reconhecimento",
+        "description": "Obtenha certificações reconhecidas pelo mercado ao concluir nossos cursos, aumentando suas qualificações e potencial de empregabilidade."
+      }
+    },
+    "JunteSeANos": {
+      "card": {
+        "title": "Junte-se a Nós",
+        "description": "Nossa missão é ser o parceiro financeiro ideal para sua empresa, oferecendo soluções inovadoras que facilitam a gestão, promovem o crescimento e capacitam sua equipe. Com a Upper, você tem acesso a uma conta digital robusta, opções diversificadas de investimentos e uma plataforma educacional de excelência."
+      }
+    }
   }
 }

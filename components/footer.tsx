@@ -1,5 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import Link from 'next/link';
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 
 // Componente para renderizar cada seção
 interface SectionProps {
@@ -127,18 +129,12 @@ export default function Footer() {
 
           {/* TODO colocar hover e links */}
           <div className="flex gap-6 items-start order-1 lg:order-none">
-            <Image
-              src="/icons/linkedin.svg"
-              alt="LinkedIn"
-              width={24}
-              height={24}
-            />
-            <Image
-              src="/icons/facebook.svg"
-              alt="Facebook"
-              width={24}
-              height={24}
-            />
+            <Link href="#">
+              <FaLinkedin size={24} className="text-[#9D9D9D] hover:text-white duration-200"/>
+            </Link>
+            <Link href="#">
+              <FaFacebook size={24} className="text-[#9D9D9D] hover:text-white duration-200"/>
+            </Link>
           </div>
         </div>
       </div>
