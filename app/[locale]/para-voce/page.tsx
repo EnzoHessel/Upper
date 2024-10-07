@@ -84,6 +84,7 @@ export default function forYou() {
           <CardsSection cards={cardsData} />
         </div>
       </section>
+      {/* TODO fazer o componente Serviços de Investimentos */}
       <section>
         <div className="flex flex-col gap-8">
           <h3 className="text-primary-foreground text-center">

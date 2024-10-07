@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function forYourCompany() {
-  return <div>for your company</div>;
+export default function ParaSuaEmpresa() {
+  return <div>Para Sua Empresa</div>;
 }

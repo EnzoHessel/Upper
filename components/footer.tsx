@@ -125,7 +125,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Ícones de redes sociais */}
+          {/* TODO colocar hover e links */}
           <div className="flex gap-6 items-start order-1 lg:order-none">
             <Image
               src="/icons/linkedin.svg"

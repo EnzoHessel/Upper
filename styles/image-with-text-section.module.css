@@ -82,6 +82,19 @@
   }
 }
 
+@media (min-width: 640px) and (max-width: 1024px) {
+  .textSection {
+    border-top-left-radius: 0cqb;
+    border-top-right-radius: 8px;
+  }
+
+  .imageSection {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+
 /* Fonte para telas pequenas (menores que 640px) */
 .title {
   color: hsl(var(--primary-foreground));

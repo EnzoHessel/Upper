@@ -5,6 +5,7 @@ import { Button } from './ui/button';
 import Image from 'next/image';
 import HamburguerMenu from './hamburguer-menu';
 import { useLocale, useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
 
 export default function MainMenu() {
   const t = useTranslations('MainMenu');
@@ -28,13 +29,28 @@ export default function MainMenu() {
         </div>
         <div className={styles.buttonsContainer}>
           <Button variant={'link'} className="p-0">
-            <span>{t('temNoUpper')}</span>
+            <Link
+              href={`/tem-no-upper`}
+              locale={locale}
+            >
+              <span>{t('temNoUpper')}</span>
+            </Link>
           </Button>
           <Button variant={'link'} className="p-0">
-            <span>{t('educacaoFinanceira')}</span>
+            <Link
+              href={`/educacao-financeira`}
+              locale={locale}
+            >
+              <span>{t('educacaoFinanceira')}</span>
+            </Link>
           </Button>
           <Button variant={'link'} className="p-0">
-            <span>{t('ajuda')}</span>
+            <Link
+              href={`/ajuda`}
+              locale={locale}
+            >
+              <span>{t('ajuda')}</span>
+            </Link>
           </Button>
         </div>
         <div className="flex justify-center items-center gap-4">
