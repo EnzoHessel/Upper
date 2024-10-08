@@ -5,7 +5,7 @@ import ImageWithTextSection from '@/components/image-with-text-section';
 import CardsSection from '@/components/card-section';
 import {
   AdjustmentsHorizontalIcon,
-  ArrowTrendingUpIcon,
+  ArrowTrendingDownIcon,
   BanknotesIcon,
   CreditCardIcon,
   CurrencyDollarIcon,
@@ -47,7 +47,7 @@ export default function forYou() {
       description: `${t("card2.card1.description")}`
     },
     {
-      Icon: ArrowTrendingUpIcon,
+      Icon: ArrowTrendingDownIcon,
       title: `${t("card2.card2.title")}`,
       description: `${t("card2.card2.description")}`
     },
