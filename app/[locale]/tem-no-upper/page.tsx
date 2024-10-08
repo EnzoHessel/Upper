@@ -52,9 +52,9 @@ export default function TemNoUpper() {
       <section>
         <div className="flex flex-col gap-8">
           <h3 className="text-primary-foreground text-center">
-            {t('card2.title')}
+            {t('CardCursos.title')}
           </h3>
-          <span className="text-[hsl(var(--secondary-content))] text-center">{t('card2.description')}</span>
+          <span className="text-[hsl(var(--secondary-content))] text-center">{t('CardCursos.description')}</span>
           <ThreeCardsSection cards={cardsData}/>
         </div>
       </section>
