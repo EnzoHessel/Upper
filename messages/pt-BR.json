@@ -290,5 +290,49 @@
         "description": "Nossa missão é ser o parceiro financeiro ideal para sua empresa, oferecendo soluções inovadoras que facilitam a gestão, promovem o crescimento e capacitam sua equipe. Com a Upper, você tem acesso a uma conta digital robusta, opções diversificadas de investimentos e uma plataforma educacional de excelência."
       }
     }
+  },
+  "EducacaoFinanceira": {
+    "HeroSection": {
+      "title": "O Caminho Superior para Educar, Poupar e Investir",
+      "description": "Transforme conhecimento em riqueza ",
+      "primaryButton": "Abrir conta",
+      "ghostButton": "Baixe o nosso app"
+    },
+    "ImageSection": {
+      "title": "Parceria com o CEBRAC",
+      "description": "No UPPER, entendemos a importância de uma educação financeira sólida para o sucesso pessoal e profissional. Por isso, estamos orgulhosamente em parceria com o CEBRAC, uma instituição renomada no ensino profissionalizante, para oferecer cursos de alta qualidade e relevância no campo financeiro."
+    },
+    "section": {
+      "title": "Educação Financeira com o UPPER e CEBRAC",
+      "ImageSection2": {
+        "title": "Cursos Especializados",
+        "description": "Explore nossa plataforma educacional, que oferece uma variedade de cursos profissionalizantes focados em finanças pessoais, investimentos e gestão financeira. Desenvolvidos por especialistas do CEBRAC e adaptados às necessidades do mercado atual, esses cursos garantem que você adquira conhecimentos práticos e aplicáveis."
+      },
+      "ImageSection3": {
+        "title": "Flexibilidade e Aprendizado Contínuo",
+        "description": "Acreditamos no aprendizado contínuo como um pilar fundamental para o sucesso financeiro. Com a UPPER e o CEBRAC, você tem acesso a conteúdos atualizados e recursos interativos que permitem aprender no seu próprio ritmo e de qualquer lugar. A flexibilidade dos cursos online permite que você concilie seus estudos com sua agenda pessoal e profissional."
+      }
+    },
+    "Card":{
+      "title": "Benefícios dos Cursos UPPER-CEBRAC",
+      "card1": {
+        "title": "Expertise Comprovada",
+        "description": "Conte com o conhecimento de especialistas do setor financeiro."
+      },
+      "card2": {
+        "title": "Certificação Reconhecida",
+        "description": "Obtenha certificados reconhecidos pelo mercado que valorizam seu currículo."
+      },
+      "card3": {
+        "title": "Suporte Personalizado",
+        "description": "Receba orientação e suporte ao longo de sua jornada educacional."
+      }
+    },
+    "JunteSeANos": {
+      "card": {
+        "title": "Junte-se a Nós",
+        "description": "Nossa missão é ser o parceiro financeiro ideal para sua empresa, oferecendo soluções inovadoras que facilitam a gestão, promovem o crescimento e capacitam sua equipe. Com a Upper, você tem acesso a uma conta digital robusta, opções diversificadas de investimentos e uma plataforma educacional de excelência."
+      }
+    }
   }
 }
