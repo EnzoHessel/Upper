@@ -1,4 +1,4 @@
-import { AcademicCapIcon, Bars3Icon, BuildingLibraryIcon, BuildingOffice2Icon, HomeIcon, QuestionMarkCircleIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { AcademicCapIcon, ArrowDownCircleIcon, Bars3Icon, BuildingLibraryIcon, BuildingOffice2Icon, HomeIcon, QuestionMarkCircleIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Button } from './ui/button';
@@ -47,8 +47,11 @@ export default function HamburguerMenu() {
             ))}
           </div>
           <div>
-            <div className=""></div>
-            <div className="flex flex-col gap-5 pt-4">
+            <div className="flex gap-[10px] items-center py-7">
+              <ArrowDownCircleIcon className="size-6 text-primary-foreground" />
+              <h4>{t("baixe")}</h4>
+            </div>
+            <div className="flex flex-col gap-5">
               <Image
                 src="/google-play-badge.svg"
                 alt="Google Play"
