@@ -1,25 +1,28 @@
 import { AcademicCapIcon, ArrowDownCircleIcon, Bars3Icon, BuildingLibraryIcon, BuildingOffice2Icon, HomeIcon, QuestionMarkCircleIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Button } from './ui/button';
 import Image from 'next/image';
+import { Link } from '@/navigation';
 
 
 export default function HamburguerMenu() {
   const t = useTranslations('HamburguerMenu');
   const [isOpen, setIsOpen] = useState(false);
+  const locale = useLocale();
+
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const options = [
-    { icon: HomeIcon, text: t("home") },
-    { icon: UserIcon, text: t("paraVoce") },
-    { icon: BuildingOffice2Icon, text: t("paraSuaEmpresa") },
-    { icon: BuildingLibraryIcon, text: t("educacaoFinanceira") },
-    { icon: AcademicCapIcon, text: t("ajuda") },
-    { icon: QuestionMarkCircleIcon, text: t("abrirConta") }
+    { icon: HomeIcon, text: t("home"), href: "/" },
+    { icon: UserIcon, text: t("paraVoce"), href: "/para-voce" },
+    { icon: BuildingOffice2Icon, text: t("paraSuaEmpresa"), href: "/para-sua-empresa" },
+    { icon: BuildingLibraryIcon, text: t("educacaoFinanceira"), href: "/educacao-financeira" },
+    { icon: AcademicCapIcon, text: t("ajuda"), href: "/ajuda" },
+    { icon: QuestionMarkCircleIcon, text: t("abrirConta"), href: "#" }
   ];
 
   return (
@@ -40,9 +43,11 @@ export default function HamburguerMenu() {
           </div>
           <div className='flex flex-col items-start gap-4 border-b border-[hsl(var(--border-secundary))] pb-4'>
             {options.map((option, index) => (
-              <Button variant={"link"} key={index} className="flex gap-[10px] px-0 items-center py-3">
-                <option.icon className="size-6 text-primary-foreground" />
-                <p>{option.text}</p>
+              <Button variant={"link"} key={index} className="px-0" onClick={toggleMenu}>
+                <Link href={option.href} locale={locale} className="flex gap-[10px] px-0 items-center py-3">
+                  <option.icon className="size-6 text-primary-foreground" />
+                  <p>{option.text}</p>
+                </Link>
               </Button>
             ))}
           </div>
@@ -51,7 +56,7 @@ export default function HamburguerMenu() {
               <ArrowDownCircleIcon className="size-6 text-primary-foreground" />
               <h4>{t("baixe")}</h4>
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col md:flex-row gap-5">
               <Image
                 src="/google-play-badge.svg"
                 alt="Google Play"

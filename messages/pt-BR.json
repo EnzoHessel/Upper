@@ -335,5 +335,34 @@
         "description": "Nossa missão é ser o parceiro financeiro ideal para sua empresa, oferecendo soluções inovadoras que facilitam a gestão, promovem o crescimento e capacitam sua equipe. Com a Upper, você tem acesso a uma conta digital robusta, opções diversificadas de investimentos e uma plataforma educacional de excelência."
       }
     }
+  },
+  "SobreUpper": {
+    "ImageSection": {
+      "title": "Nossa Missão",
+      "description": "Nossa missão é democratizar o acesso a serviços financeiros e educação de qualidade. Queremos que cada pessoa, independentemente de sua experiência ou conhecimento prévio, tenha a oportunidade de investir de forma inteligente e segura, e adquirir as habilidades necessárias para prosperar financeiramente."
+    },
+    "ImageSection2": {
+      "title": "Nossa Visão",
+      "description": "Visamos ser a principal referência em banco digital e educação financeira no Brasil. Queremos transformar a forma como as pessoas pensam sobre finanças, proporcionando ferramentas e conhecimentos que as capacitem a alcançar seus objetivos financeiros de maneira eficaz e sustentável."
+    },
+    "card": {
+      "title": "Nossos Valores",
+      "card1": {
+        "title": "Empoderamento",
+        "description": "Estamos constantemente buscando maneiras de inovar e melhorar nossos serviços, utilizando a tecnologia para oferecer soluções financeiras de ponta."
+      },
+      "card2": {
+        "title": "Transparência",
+        "description": "Mantemos uma comunicação clara e aberta com nossos clientes, garantindo que todas as informações sejam acessíveis e compreensíveis."
+      },
+      "card3": {
+        "title": "Inovação",
+        "description": "Nosso objetivo é capacitar nossos clientes com as ferramentas e conhecimentos necessários para tomar decisões financeiras informadas e eficazes."
+      },
+      "card4": {
+        "title": "Segurança",
+        "description": "Priorizamos a segurança de seus dados e investimentos, adotando as melhores práticas e tecnologias de segurança cibernética."
+      }
+    }
   }
 }
