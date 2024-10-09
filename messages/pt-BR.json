@@ -116,6 +116,15 @@
       "primaryButton": "Abrir conta",
       "ghostButton": "Baixe o nosso app"
     },
+    "ImageSection2":{
+      "titlePricipal": "Serviços de Investimentos",
+      "title": "Criptomoedas",
+      "description": "Invista nas principais criptomoedas do mercado, como Bitcoin e Ethereum, com segurança e transparência. Nossa plataforma oferece informações atualizadas e ferramentas para ajudá-lo a tomar decisões informadas.",
+      "title2": "CCBs (Cédulas de Crédito Bancário)",
+      "description2": "Diversifique seus investimentos com CCBs, que oferecem rentabilidade atraente e são uma opção segura para quem busca alternativas à poupança tradicional.",
+      "title3": "NCs (Notas Comerciais)",
+      "description3": "Invista em NCs e aproveite as oportunidades de retorno proporcionadas por empresas sólidas e confiáveis. Ideal para quem busca investir em renda fixa com boas perspectivas de lucro."
+    },
     "ForYou": {
       "title": "Conta Digital para Transações Simples e Rápidas",
       "description": "A nossa conta digital é a base da sua experiência com a Upper. Projetada para ser simples, segura e conveniente, ela oferece tudo o que você precisa para gerenciar suas finanças diárias:"
@@ -216,6 +225,15 @@
         "description": "Acesso a cursos e treinamentos de qualidade para desenvolver as habilidades da sua equipe e impulsionar o crescimento do seu negócio."
       }
     },
+    "ImageSection2":{
+      "titlePricipal": "Serviços de Investimentos",
+      "title": "Criptomoedas",
+      "description": "Invista nas principais criptomoedas do mercado, como Bitcoin e Ethereum, com segurança e transparência. Nossa plataforma oferece informações atualizadas e ferramentas para ajudá-lo a tomar decisões informadas.",
+      "title2": "CCBs (Cédulas de Crédito Bancário)",
+      "description2": "Diversifique seus investimentos com CCBs, que oferecem rentabilidade atraente e são uma opção segura para quem busca alternativas à poupança tradicional.",
+      "title3": "NCs (Notas Comerciais)",
+      "description3": "Invista em NCs e aproveite as oportunidades de retorno proporcionadas por empresas sólidas e confiáveis. Ideal para quem busca investir em renda fixa com boas perspectivas de lucro."
+    },
     "CardExperiência": {
       "title": "Uma experiência transparente",
       "card1": {
@@ -268,6 +286,15 @@
     "ImageSection" :{
       "title": "Conta Digital com Serviços Transacionais",
       "description": "A UPPER oferece uma conta digital completa, projetada para simplificar suas transações financeiras. Com nossa plataforma intuitiva e segura, você pode realizar pagamentos, transferências e gerenciar suas finanças pessoais de forma eficiente e conveniente."
+    },
+    "ImageSection2":{
+      "titlePricipal": "Serviços de Investimentos",
+      "title": "Criptomoedas",
+      "description": "Invista nas principais criptomoedas do mercado, como Bitcoin e Ethereum, com segurança e transparência. Nossa plataforma oferece informações atualizadas e ferramentas para ajudá-lo a tomar decisões informadas.",
+      "title2": "CCBs (Cédulas de Crédito Bancário)",
+      "description2": "Diversifique seus investimentos com CCBs, que oferecem rentabilidade atraente e são uma opção segura para quem busca alternativas à poupança tradicional.",
+      "title3": "NCs (Notas Comerciais)",
+      "description3": "Invista em NCs e aproveite as oportunidades de retorno proporcionadas por empresas sólidas e confiáveis. Ideal para quem busca investir em renda fixa com boas perspectivas de lucro."
     },
     "CardCursos":{
       "title": "Cursos Profissionalizantes na Plataforma do CEBRAC",

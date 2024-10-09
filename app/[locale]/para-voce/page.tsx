@@ -13,9 +13,25 @@ import {
   Square3Stack3DIcon,
 } from '@heroicons/react/24/outline';
 import ThreeCardsSection from '@/components/three-cards-section';
+import ImageSection from '@/components/image-section';
 
 export default function forYou() {
   const t = useTranslations('ForYouPage');
+
+  const section = [
+    {
+      title: t('ImageSection2.title'),
+      description: t('ImageSection2.description')
+    },
+    {
+      title: t('ImageSection2.title2'),
+      description: t('ImageSection2.description2')
+    },
+    {
+      title: t('ImageSection2.title3'),
+      description: t('ImageSection2.description3')
+    }
+  ];
 
   const cardsData = [
     {
@@ -84,7 +100,12 @@ export default function forYou() {
           <CardsSection cards={cardsData} />
         </div>
       </section>
-      {/* TODO fazer o componente Serviços de Investimentos */}
+      <section className='flex flex-col gap-8'>
+        <h3 className="text-primary-foreground text-center">
+          {t('ImageSection2.titlePricipal')}
+        </h3>
+        <ImageSection image={"misao.svg"} textSections={section} />
+      </section>
       <section>
         <div className="flex flex-col gap-8">
           <h3 className="text-primary-foreground text-center">

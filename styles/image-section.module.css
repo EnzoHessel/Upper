@@ -1,0 +1,132 @@
+.imageWithTextSection {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .imageWithTextSection {
+    flex-direction: row;
+    height: 420px; /* Ajustado para 420px */
+  }
+}
+
+@media (min-width: 768px) {
+  .imageWithTextSection {
+    height: auto; /* Ajustado para 420px */
+  }
+  .imageSection {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imageWithTextSection {
+    height: 420px; /* Mantido em 420px */
+  }
+}
+.imageSection {
+  background-color: hsl(var(--foreground-2));
+  width: 100%;
+  height: auto; /* Ajustar a altura da imagem ao conteúdo no mobile */
+  padding: 1.5rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .imageSection {
+    padding: 2rem;
+    max-width: 344px;
+    height: 100%; /* Garantir que a altura preencha o espaço no desktop */
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .imageSection {
+    max-width: 400px;
+  }
+}
+
+.imageContainer {
+  align-items: center;
+  position: relative;
+  width: 100%; /* Para ocupar o espaço total do container pai */
+  height: 100%;
+}
+
+/* Estilos para desktop */
+@media (min-width: 1024px) {
+  .imageContainer {
+    width: 335px;
+    height: 356px;
+  }
+}
+
+/* Estilos para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .imageContainer {
+    width: 280px;
+    height: 296px;
+  }
+}
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+  .imageContainer {
+    width: 294px;
+    height: 294px;
+  }
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2rem;
+  background-color: hsl(var(--foreground));
+  width: 100%;
+  padding: 32px 24px;
+  height: auto; /* Ajustar a altura ao conteúdo no mobile */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+@media (min-width: 640px) {
+  .textSection {
+    justify-content: center;
+    padding: 32px 24px;
+    height: 100%; /* Manter o preenchimento da altura no desktop */
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+  .textSection {
+    border-top-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
+
+  .imageSection {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+}
+
+/* Fonte para telas pequenas (menores que 640px) */
+.title {
+  color: hsl(var(--primary-foreground));
+  padding-bottom: 8px;
+}
+
+.description {
+  color: hsl(var(--secondary-content));
+}
