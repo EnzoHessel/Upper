@@ -10,12 +10,12 @@ export default function TopMenu() {
   return (
     <nav className={styles.topMenuContainer}>
       <div className={styles.topMenuContent}>
-        <Button variant={'link'} className="p-0">
+        <Button variant={'link'} className="p-0 uppercase">
           <Link href={'/para-voce'} locale={locale}>
             <span>{t('paraVoce')}</span>
           </Link>
         </Button>
-        <Button variant={'link'} className="p-0">
+        <Button variant={'link'} className="p-0 uppercase">
           <Link href={'/para-sua-empresa'} locale={locale}>
             <span>{t('paraSuaEmpresa')}</span>
           </Link>

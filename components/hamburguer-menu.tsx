@@ -44,7 +44,7 @@ export default function HamburguerMenu() {
           <div className='flex flex-col items-start gap-4 border-b border-[hsl(var(--border-secundary))] pb-4'>
             {options.map((option, index) => (
               <Button variant={"link"} key={index} className="px-0" onClick={toggleMenu}>
-                <Link href={option.href} locale={locale} className="flex gap-[10px] px-0 items-center py-3">
+                <Link href={option.href} locale={locale} className="flex gap-[10px] px-0 items-center py-3 uppercase">
                   <option.icon className="size-6 text-primary-foreground" />
                   <p>{option.text}</p>
                 </Link>

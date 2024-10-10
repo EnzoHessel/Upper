@@ -1,15 +1,24 @@
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
-import Link from 'next/link';
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { Button } from './ui/button';
+import { Link } from '@/navigation';
 
 // Componente para renderizar cada seção
 interface SectionProps {
   title: string;
-  items: { text: string; text2?: string }[];
+  items: { text: string; text2?: string; href: string }[];
 }
 
+interface CommunicationSectionProps {
+  title: string;
+  items: { text: string; text2?: string; }[];
+}
+
+
 function Section({ title, items }: SectionProps) {
+  const locale = useLocale();
+
   return (
     <div className="flex flex-col gap-4">
       <h3 className="text-sm text-[hsl(var(--secondary-content))] font-medium">
@@ -17,9 +26,28 @@ function Section({ title, items }: SectionProps) {
       </h3>
       <ul className="flex flex-col gap-3">
         {items.map((item, idx) => (
-          <li key={idx} className="font-medium">
+          <Button variant={"link"} key={idx} className="px-0 justify-start py-0">
+            <Link href={item.href} locale={locale}>
+              <p>{item.text}</p>
+            </Link>
+          </Button>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function CommunicationSections({ title, items }: CommunicationSectionProps) {
+  return (
+    <div className="flex flex-col gap-4">
+      <h3 className="text-sm text-[hsl(var(--secondary-content))] font-medium">
+        {title}
+      </h3>
+      <ul className="flex flex-col gap-3">
+        {items.map((item, idx) => (
+          <li key={idx} className="font-medium text-[hsl(var(--secondary-content))]">
             {item.text}
-            {item.text2 && <p className="font-medium">{item.text2}</p>}
+            {item.text2 && <p className="font-medium text-[hsl(var(--secondary-content))]">{item.text2}</p>}
           </li>
         ))}
       </ul>
@@ -33,15 +61,18 @@ const getFooterData = (t: (key: string) => string) => ({
     {
       title: t('informacoes.title'),
       items: [
-        { text: t('informacoes.Privacidade') },
-        { text: t('informacoes.Segurança') },
-        { text: t('informacoes.Financeiros') },
-        { text: t('informacoes.sac') },
+        { text: t('informacoes.Privacidade'), href: '/privacidade' },
+        { text: t('informacoes.Segurança'), href: '/politica-de-seguranca' },
+        { text: t('informacoes.Financeiros'), href: '/financeiros' },
+        { text: t('informacoes.sac'), href: '/sac' },
       ],
     },
     {
       title: t('Empresa.title'),
-      items: [{ text: t('Empresa.Sobre') }, { text: t('Empresa.Carreiras') }],
+      items: [
+        { text: t('Empresa.Sobre'), href: '/sobre-o-upper' },
+        { text: t('Empresa.Carreiras'), href: '/#' }
+      ],
     },
   ],
   communicationSections: [
@@ -112,7 +143,7 @@ export default function Footer() {
             <Section key={index} title={section.title} items={section.items} />
           ))}
           {communicationSections.map((section, index) => (
-            <Section key={index} title={section.title} items={section.items} />
+            <CommunicationSections key={index} title={section.title} items={section.items}/>
           ))}
         </div>
 

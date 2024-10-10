@@ -28,15 +28,15 @@ export default function MainMenu() {
           />
         </div>
         <div className={styles.buttonsContainer}>
-          <Button variant={'link'} className="p-0">
+          <Button variant={'link'} className="p-0 uppercase">
             <Link
-              href={`/tem-no-upper`}
+              href={`/tem-no-upper`} 
               locale={locale}
             >
               <span>{t('temNoUpper')}</span>
             </Link>
           </Button>
-          <Button variant={'link'} className="p-0">
+          <Button variant={'link'} className="p-0 uppercase">
             <Link
               href={`/educacao-financeira`}
               locale={locale}
@@ -44,7 +44,7 @@ export default function MainMenu() {
               <span>{t('educacaoFinanceira')}</span>
             </Link>
           </Button>
-          <Button variant={'link'} className="p-0">
+          <Button variant={'link'} className="p-0 uppercase">
             <Link
               href={`/ajuda`}
               locale={locale}

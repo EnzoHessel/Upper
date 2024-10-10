@@ -391,5 +391,11 @@
         "description": "Priorizamos a segurança de seus dados e investimentos, adotando as melhores práticas e tecnologias de segurança cibernética."
       }
     }
+  },
+  "PoliticaSegurança": {
+    "ImageSection": {
+      "title": "Segurança no UPPER: Protegendo Seus Dados e Seu Futuro",
+      "description": "Na UPPER, a sua segurança é nossa prioridade. Estamos comprometidos em proteger suas informações pessoais e financeiras, garantindo que você possa usar nossos serviços com total tranquilidade. Adotamos as melhores práticas e tecnologias de segurança para salvaguardar seus dados e combater ameaças como lavagem de dinheiro e fraudes cibernéticas."
+    }
   }
 }
