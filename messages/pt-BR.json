@@ -396,6 +396,31 @@
     "ImageSection": {
       "title": "Segurança no UPPER: Protegendo Seus Dados e Seu Futuro",
       "description": "Na UPPER, a sua segurança é nossa prioridade. Estamos comprometidos em proteger suas informações pessoais e financeiras, garantindo que você possa usar nossos serviços com total tranquilidade. Adotamos as melhores práticas e tecnologias de segurança para salvaguardar seus dados e combater ameaças como lavagem de dinheiro e fraudes cibernéticas."
+    },
+    "Section1": {
+      "title": "1. Políticas de Controle de Informações Confidenciais",
+      "description": "Entendemos a importância de manter suas informações pessoais seguras e confidenciais. Por isso, implementamos políticas rigorosas para controle e acesso aos seus dados. Nossos sistemas utilizam criptografia avançada para proteger suas informações durante a transmissão e armazenamento. Apenas funcionários autorizados e treinados têm acesso a dados confidenciais, e todas as atividades são monitoradas e registradas para garantir a conformidade com nossas políticas de segurança."
+    },
+    "Section2": {
+      "title": "2. Prevenção e Combate à Lavagem de Dinheiro",
+      "description": "A lavagem de dinheiro é uma prática ilegal que pode ter sérias consequências para a integridade do sistema financeiro e a segurança dos clientes. No UPPER, adotamos medidas proativas para prevenir e combater a lavagem de dinheiro, incluindo a verificação rigorosa da identidade de nossos clientes, o monitoramento de transações suspeitas e a colaboração com autoridades regulatórias para relatar atividades suspeitas.",
+      "item1": "Conheça seu Cliente (KYC): Verificamos a identidade de todos os nossos clientes, exigindo documentos e informações que comprovem sua autenticidade.",
+      "item2": "Monitoramento de Transações: Utilizamos sistemas de monitoramento para identificar e analisar atividades suspeitas em tempo real.",
+      "item3": "Relatórios de Atividades Suspeitas: Qualquer transação suspeita é relatada às autoridades competentes para investigação e ação apropriada.",
+      "item4": "Treinamento Continuado: Nossos colaboradores recebem treinamento constante para reconhecer sinais de lavagem de dinheiro e fraudes financeiras."
+    },
+    "Section3": {
+      "title": "3. Controle de Segurança Cibernética",
+      "description": "Em um mundo cada vez mais digital, a segurança cibernética é essencial para proteger nossos clientes contra ameaças online. A UPPER investe em tecnologia de ponta e adota uma abordagem multilayer para garantir a segurança de nossos sistemas e dados. Nossas medidas incluem:",
+      "item1": "Firewall e Sistemas de Detecção de Intrusão: Protegemos nossa infraestrutura com firewalls avançados e sistemas de detecção de intrusão que monitoram e bloqueiam acessos não autorizados.",
+      "item2": "Autenticação em Dois Fatores (2FA): Exigimos autenticação em dois fatores para acesso às contas, proporcionando uma camada extra de segurança para nossos clientes.",
+      "item3": "Testes de Penetração e Auditorias Regulares: Realizamos testes de penetração e auditorias de segurança regularmente para identificar e corrigir vulnerabilidades em nossos sistemas.",
+      "item4": "Respostas a Incidentes: Contamos com uma equipe dedicada de resposta a incidentes, pronta para agir rapidamente em caso de qualquer ameaça à segurança cibernética."
+    },
+    "Section4": {
+      "title": "Compromisso com a Transparência e Conformidade",
+      "description": "A UPPER se compromete a seguir todas as leis e regulamentos aplicáveis, mantendo a transparência em todas as nossas operações. Estamos sempre aprimorando nossas práticas de segurança para proteger nossos clientes e proporcionar a melhor experiência financeira possível. Sua confiança é nosso maior ativo, e trabalhamos diariamente para merecê-la.",
+      "description2": "Para saber mais sobre nossas políticas de segurança ou se tiver alguma dúvida, entre em contato com nossa equipe de suporte. Na UPPER, estamos aqui para proteger o seu futuro financeiro."
     }
   }
 }
