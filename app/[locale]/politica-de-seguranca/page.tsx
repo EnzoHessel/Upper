@@ -14,9 +14,12 @@ const Section = ({ title, description, items }: SectionProps) => (
       <h2 className="text-primary-foreground pb-2">{title}</h2>
       <span className="text-[hsl(var(--secondary-content))]">{description}</span>
       {items && (
-        <ul className='list-disc list-inside text-sm text-[hsl(var(--secondary-content))]'>
+        <ul className='list-none text-sm text-[hsl(var(--secondary-content))]'>
           {items.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className='flex items-start'>
+              <span className="mr-1">• </span>
+              {item}
+            </li>
           ))}
         </ul>
       )}
