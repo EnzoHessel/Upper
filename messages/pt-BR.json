@@ -422,5 +422,28 @@
       "description": "A UPPER se compromete a seguir todas as leis e regulamentos aplicáveis, mantendo a transparência em todas as nossas operações. Estamos sempre aprimorando nossas práticas de segurança para proteger nossos clientes e proporcionar a melhor experiência financeira possível. Sua confiança é nosso maior ativo, e trabalhamos diariamente para merecê-la.",
       "description2": "Para saber mais sobre nossas políticas de segurança ou se tiver alguma dúvida, entre em contato com nossa equipe de suporte. Na UPPER, estamos aqui para proteger o seu futuro financeiro."
     }
+  },
+  "ajuda": {
+    "title1": "Precisa de ajuda?",
+    "title2": "Trabalhe conosco",
+    "section1": {
+      "title": "Canais de comunicação",
+      "subtitle": "Ao lado estão nossos canais de comunicações que podem auxiliar você.",
+      "content": {
+        "heading": "Central",
+        "content": "0800 400 1400",
+        "heading2": "Atendimento",
+        "content2": "atendimento@upper.com.br",
+        "heading3": "Tem alguma sugestão para o app?",
+        "content3": "ouvidoria@upper.com.br"
+      }
+    },
+    "section2": {
+      "title": "Faça parte da nossa história!",
+      "content": {
+        "heading": "Envie-nos um e-mail",
+        "content": "carreiras@upper.com.br"
+      }
+    }
   }
 }
