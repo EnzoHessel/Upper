@@ -81,9 +81,14 @@ export default function Home() {
           title={t('Solucoes.card.title')}
           description={t('Solucoes.card.description')}
           images={[
-            'Carrousel/phone-1.svg',
-            'Carrousel/phone-2.svg',
-            'Carrousel/phone-3.svg',
+            '/Carrousel/frame.webp',
+            '/Carrousel/frame-1.webp',
+            '/Carrousel/frame-2.webp',
+            '/Carrousel/frame-3.webp',
+            '/Carrousel/frame-4.webp',
+            '/Carrousel/frame-5.webp',
+            '/Carrousel/frame-6.webp',
+            '/Carrousel/frame-7.webp'
           ]}
         />
       </motion.section>
