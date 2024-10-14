@@ -1,8 +1,11 @@
+"use client"
+
 import CardsSection from '@/components/card-section';
 import ImageWithTextSection from '@/components/image-with-text-section';
 import styles from '@/styles/home-page.module.css';
 import { BoltIcon, CubeTransparentIcon, RocketLaunchIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
 
 
 export default function SobreUpper() {
@@ -33,30 +36,42 @@ export default function SobreUpper() {
 
   return (
     <div className={styles.homePageContainer}>
-      <section>
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <ImageWithTextSection
           title={t('ImageSection.title')}
           description={t('ImageSection.description')}
           image={'misao.svg'}
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
-      </section>
-      <section>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <ImageWithTextSection
           title={t('ImageSection2.title')}
           description={t('ImageSection2.description')}
           image={'visao.svg'}
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
-      </section>
-      <section>
+      </motion.section>
+      <motion.section
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="flex flex-col gap-8">
           <h3 className="text-primary-foreground text-center">
             {t('card.title')}
           </h3>
           <CardsSection cards={cardsData} />
         </div>
-      </section>
+      </motion.section>
     </div>
   )
 }

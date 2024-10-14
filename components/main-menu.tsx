@@ -18,17 +18,18 @@ export default function MainMenu() {
       aria-label="Main Menu"
     >
       <motion.div className={styles.mainMenuContent}
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0, y: -20 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        transition={{ duration: 0.5 }}
       >
-        <motion.button
+        <button
           className="relative h-[37px] w-[119px] cursor-pointer"
           onClick={() => (window.location.href = `/${locale}`)}
           aria-label="Home"
-          initial={{ x: -50 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.5 }}
         >
           <Image
             src={'/logo-horizontal-upper.svg'}
@@ -38,7 +39,7 @@ export default function MainMenu() {
             quality={100}
             priority
           />
-        </motion.button>
+        </button>
         <div className={styles.buttonsContainer}>
           <Button variant={'link'} className="p-0 uppercase">
             <Link
