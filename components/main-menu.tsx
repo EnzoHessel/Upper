@@ -78,11 +78,11 @@ export default function MainMenu() {
           >
             <span>{t('abrirConta')}</span>
           </Button>
-          <div className={styles.hamburguerMenu}>
-            <HamburguerMenu />
-          </div>
         </div>
       </motion.div>
+      <div className={styles.hamburguerMenu}>
+        <HamburguerMenu />
+      </div>
     </nav>
   );
 }

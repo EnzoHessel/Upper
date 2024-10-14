@@ -108,6 +108,7 @@ export default function Footer() {
               alt="Logo"
               fill
               quality={100}
+              className='object-cover'
               draggable={false}
             />
           </div>

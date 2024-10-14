@@ -53,12 +53,7 @@ export default function SobreUpper() {
         />
       </section>
       <section>
-        <div className="flex flex-col gap-8">
-          <h3 className="text-primary-foreground text-center">
-            {t('card.title')}
-          </h3>
-          <CardsSection cards={cardsData} />
-        </div>
+        <CardsSection title={t('card.title')} cards={cardsData} />
       </section>
     </div>
   )

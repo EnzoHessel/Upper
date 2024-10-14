@@ -39,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 64px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -55,5 +56,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 16px;
   }
 }
