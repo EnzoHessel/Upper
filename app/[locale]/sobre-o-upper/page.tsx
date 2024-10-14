@@ -1,12 +1,8 @@
-"use client"
-
 import CardsSection from '@/components/card-section';
 import ImageWithTextSection from '@/components/image-with-text-section';
 import styles from '@/styles/home-page.module.css';
 import { BoltIcon, CubeTransparentIcon, RocketLaunchIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
-
 
 export default function SobreUpper() {
   const t = useTranslations('SobreUpper');

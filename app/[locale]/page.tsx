@@ -74,16 +74,12 @@ export default function Home() {
         />
       </section>
       <section>
-        <div className="flex flex-col gap-8">
-          <h3 className="text-primary-foreground text-center">
-            {t('JunteSeANos.title')}
-          </h3>
-          <ImageWithTextSection
-            title={t('JunteSeANos.card.title')}
-            description={t('JunteSeANos.card.description')}
-            image={'junte-se-a-nos.svg'}
-          />
-        </div>
+        <ImageWithTextSection
+        sectionTitle={t('JunteSeANos.title')}
+          title={t('JunteSeANos.card.title')}
+          description={t('JunteSeANos.card.description')}
+          image={'junte-se-a-nos.svg'}
+        />
       </section>
     </div>
   );
