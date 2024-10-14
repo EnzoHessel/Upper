@@ -1,3 +1,5 @@
+"use client"
+
 import styles from '@/styles/hero-section.module.css';
 import { Button } from './ui/button';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';

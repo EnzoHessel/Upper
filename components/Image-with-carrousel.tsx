@@ -6,6 +6,7 @@ import { Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { motion } from 'framer-motion';
 
 type ImageWithTextSectionProps = {
   title: string;
@@ -19,7 +20,12 @@ export default function ImageWithCarrousel({
   images,
 }: ImageWithTextSectionProps) {
   return (
-    <div className={styles.imageWithTextSection}>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={styles.imageWithTextSection}
+    >
       <div className={styles.imageSection}>
         <div className={styles.imageContainer}>
           <Swiper
@@ -49,7 +55,7 @@ export default function ImageWithCarrousel({
             {images.map((image, index) => (
               <SwiperSlide key={index}>
                 <div className="relative w-[171px] h-[346px]">
-                  <Image src={image} alt="phone" fill />
+                  <Image src={image} alt="phone" fill quality={100}/>
                 </div>
               </SwiperSlide>
             ))}
@@ -61,6 +67,6 @@ export default function ImageWithCarrousel({
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }

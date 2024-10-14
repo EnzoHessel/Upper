@@ -36,42 +36,30 @@ export default function SobreUpper() {
 
   return (
     <div className={styles.homePageContainer}>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      <section>
         <ImageWithTextSection
           title={t('ImageSection.title')}
           description={t('ImageSection.description')}
           image={'misao.svg'}
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      </section>
+      <section>
         <ImageWithTextSection
           title={t('ImageSection2.title')}
           description={t('ImageSection2.description')}
           image={'visao.svg'}
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      </section>
+      <section>
         <div className="flex flex-col gap-8">
           <h3 className="text-primary-foreground text-center">
             {t('card.title')}
           </h3>
           <CardsSection cards={cardsData} />
         </div>
-      </motion.section>
+      </section>
     </div>
   )
 }
