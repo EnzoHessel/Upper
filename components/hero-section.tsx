@@ -1,6 +1,7 @@
 import styles from '@/styles/hero-section.module.css';
 import { Button } from './ui/button';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { motion } from 'framer-motion';
 
 type HeroSectionProps = {
   title: string;
@@ -17,7 +18,12 @@ export default function HeroSection({
 }: HeroSectionProps) {
   return (
     <>
-      <div className={styles.heroSectionContainer}>
+      <motion.div
+       initial={{ opacity: 0, y: 20 }}
+       animate={{ opacity: 1, y: 0 }}
+       transition={{ duration: 0.5 }}
+       className={styles.heroSectionContainer}
+      >
         <h1 className="text-primary-foreground">{title}</h1>
         <h3 className="text-[hsl(var(--secondary-content))]">{description}</h3>
         <div className={styles.buttonsContainer}>
@@ -29,7 +35,7 @@ export default function HeroSection({
             <ArrowRightIcon className="size-6" />
           </Button>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
