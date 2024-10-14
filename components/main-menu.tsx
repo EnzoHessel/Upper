@@ -6,32 +6,45 @@ import Image from 'next/image';
 import HamburguerMenu from './hamburguer-menu';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
+import { motion } from 'framer-motion';
 
 export default function MainMenu() {
   const t = useTranslations('MainMenu');
   const locale = useLocale();
 
   return (
-    <div className={styles.mainMenuContainer}>
-      <div className={styles.mainMenuContent}>
-        <div
+    <nav
+      className={styles.mainMenuContainer}
+      aria-label="Main Menu"
+    >
+      <motion.div className={styles.mainMenuContent}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+      >
+        <motion.button
           className="relative h-[37px] w-[119px] cursor-pointer"
           onClick={() => (window.location.href = `/${locale}`)}
+          aria-label="Home"
+          initial={{ x: -50 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.5 }}
         >
           <Image
-            objectFit={'cover'}
             src={'/logo-horizontal-upper.svg'}
-            alt="logo"
+            alt="Upper logo"
+            className="object-cover"
             fill
             quality={100}
             priority
           />
-        </div>
+        </motion.button>
         <div className={styles.buttonsContainer}>
           <Button variant={'link'} className="p-0 uppercase">
             <Link
-              href={`/tem-no-upper`} 
+              href={`/tem-no-upper`}
               locale={locale}
+              aria-label={t('temNoUpper')}
             >
               <span>{t('temNoUpper')}</span>
             </Link>
@@ -40,6 +53,7 @@ export default function MainMenu() {
             <Link
               href={`/educacao-financeira`}
               locale={locale}
+              aria-label={t('educacaoFinanceira')}
             >
               <span>{t('educacaoFinanceira')}</span>
             </Link>
@@ -48,6 +62,7 @@ export default function MainMenu() {
             <Link
               href={`/ajuda`}
               locale={locale}
+              aria-label={t('ajuda')}
             >
               <span>{t('ajuda')}</span>
             </Link>
@@ -58,6 +73,7 @@ export default function MainMenu() {
             variant={'default'}
             size={'lg'}
             className={styles.buttonAbrirConta}
+            aria-label={t('abrirConta')}
           >
             <span>{t('abrirConta')}</span>
           </Button>
@@ -65,7 +81,7 @@ export default function MainMenu() {
             <HamburguerMenu />
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </nav>
   );
 }

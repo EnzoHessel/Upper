@@ -20,8 +20,8 @@ export default function ImageWithTextSection({
           <Image
             src={`/${image}`}
             alt={title}
-            layout="fill"
-            objectFit="contain"
+            fill
+            className="object-fill"
           />
         </div>
       </div>

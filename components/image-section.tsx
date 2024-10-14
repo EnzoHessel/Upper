@@ -24,7 +24,7 @@ export default function ({
             src={`/${image}`}
             alt="Image"
             layout="fill"
-            objectFit="contain"
+            className="object-contain"
           />
         </div>
       </div>
