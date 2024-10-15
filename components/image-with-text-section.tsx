@@ -37,7 +37,8 @@ export default function ImageWithTextSection({
               src={`/${image}`}
               alt={title}
               fill
-              className="object-fill"
+              className="object-cover"
+              draggable={false}
             />
           </div>
         </div>
