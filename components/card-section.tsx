@@ -16,7 +16,7 @@ export default function CardsSection({ cards, title }: CardsSectionProps) {
     <div className="flex flex-col gap-8">
        {title && (
         <h3 className="text-primary-foreground text-center">
-          t('card.title')
+          {title}
         </h3>
        )}
       <div className="text-center flex flex-col gap-8">
