@@ -29,10 +29,10 @@ export default function HeroSection({
         <h1 className="text-primary-foreground">{title}</h1>
         <h3 className="text-[hsl(var(--secondary-content))]">{description}</h3>
         <div className={styles.buttonsContainer}>
-          <Button variant={'default'} size={'lg'} >
+          <Button variant={'default'} size={'lg'} className='w-[251px]'>
             {primaryButton}
           </Button>
-          <Button variant={'ghost'} size={'lg'} className="flex gap-2 hover:text-background">
+          <Button variant={'ghost'} size={'lg'} className="w-[251px} px-[38px] flex gap-2 hover:text-background">
             {ghostButton}
             <ArrowRightIcon className="size-6" />
           </Button>

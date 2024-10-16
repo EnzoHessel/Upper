@@ -39,6 +39,7 @@ export default function ImageWithTextSection({
               fill
               className="object-cover"
               draggable={false}
+              priority
             />
           </div>
         </div>

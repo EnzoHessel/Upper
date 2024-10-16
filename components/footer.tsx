@@ -124,11 +124,13 @@ export default function Footer() {
                 width={150}
                 height={44}
                 quality={100}
+                loading="lazy"
                 draggable={false}
               />
               <Image
                 src="/app-store-badge.svg"
                 alt="App Store"
+                loading="lazy"
                 width={150}
                 height={44}
                 quality={100}

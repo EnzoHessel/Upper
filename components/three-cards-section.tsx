@@ -49,7 +49,7 @@ export default function ThreeCardsSection({ cards, title, description }: ThreeCa
             title={card.title}
             description={card.description}
             />
-          ))} 
+          ))}
         </motion.div>
       </div>
   </div>

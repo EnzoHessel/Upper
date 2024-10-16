@@ -23,8 +23,9 @@ export default function ({
           <Image
             src={`/${image}`}
             alt="Image"
-            layout="fill"
+            fill
             className="object-contain"
+            loading="lazy"
           />
         </div>
       </div>

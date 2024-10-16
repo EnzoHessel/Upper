@@ -64,6 +64,7 @@ export default function HamburguerMenu() {
               width={150}
               height={44}
               quality={100}
+              loading="lazy"
               draggable={false}
             />
             <Image
@@ -72,6 +73,7 @@ export default function HamburguerMenu() {
               width={150}
               height={44}
               quality={100}
+              loading="lazy"
               draggable={false}
             />
           </div>

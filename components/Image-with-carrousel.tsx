@@ -55,7 +55,7 @@ export default function ImageWithCarrousel({
             {images.map((image, index) => (
               <SwiperSlide key={index}>
                 <div className="relative w-[171px] h-[346px]">
-                  <Image src={image} alt="phone" fill quality={100}/>
+                  <Image loading="lazy" src={image} alt="phone" fill quality={100}/>
                 </div>
               </SwiperSlide>
             ))}

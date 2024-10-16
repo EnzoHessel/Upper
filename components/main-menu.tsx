@@ -26,21 +26,16 @@ export default function MainMenu() {
         }}
         transition={{ duration: 0.5 }}
       >
-        <button
-          className="relative h-[37px] w-[119px] cursor-pointer"
-          aria-label="Home"
-        >
-          <Link href={`/`} locale={locale}>
-            <Image
-              src={'/logo-horizontal-upper.svg'}
-              alt="Upper logo"
-              className="object-cover"
-              fill
-              quality={100}
-              priority
-            />
-          </Link>
-        </button>
+        <Link href={`/`} locale={locale} className="relative h-[37px] w-[119px] cursor-pointer" >
+          <Image
+            src={'/logo-horizontal-upper.svg'}
+            alt="Upper logo"
+            className="object-cover"
+            fill
+            quality={100}
+            priority
+          />
+        </Link>
         <div className={styles.buttonsContainer}>
           <Button variant={'link'} className="p-0 uppercase">
             <Link
