@@ -28,17 +28,18 @@ export default function MainMenu() {
       >
         <button
           className="relative h-[37px] w-[119px] cursor-pointer"
-          onClick={() => (window.location.href = `/${locale}`)}
           aria-label="Home"
         >
-          <Image
-            src={'/logo-horizontal-upper.svg'}
-            alt="Upper logo"
-            className="object-cover"
-            fill
-            quality={100}
-            priority
-          />
+          <Link href={`/`} locale={locale}>
+            <Image
+              src={'/logo-horizontal-upper.svg'}
+              alt="Upper logo"
+              className="object-cover"
+              fill
+              quality={100}
+              priority
+            />
+          </Link>
         </button>
         <div className={styles.buttonsContainer}>
           <Button variant={'link'} className="p-0 uppercase">
