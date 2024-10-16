@@ -45,23 +45,19 @@ export default function EducacaoFinanceira() {
         />
       </section>
       <section>
-        <div className="flex flex-col gap-8">
-          <h3 className="text-primary-foreground text-center">
-            {t('section.title')}
-          </h3>
-          <ImageWithTextSection
-            title={t('section.ImageSection2.title')}
-            description={t('section.ImageSection2.description')}
-            image={'cursos.svg'}
-            className="w-[250px] md:w-[280px] lg:w-[336px]"
-          />
-          <ImageWithTextSection
-            title={t('section.ImageSection3.title')}
-            description={t('section.ImageSection3.description')}
-            image={'aprendizado.svg'}
-            className="w-[250px] md:w-[280px] lg:w-[336px]"
-          />
-        </div>
+        <ImageWithTextSection
+          sectionTitle={t('section.title')}
+          title={t('section.ImageSection2.title')}
+          description={t('section.ImageSection2.description')}
+          image={'cursos.svg'}
+          className="w-[250px] md:w-[280px] lg:w-[336px]"
+        />
+        <ImageWithTextSection
+          title={t('section.ImageSection3.title')}
+          description={t('section.ImageSection3.description')}
+          image={'aprendizado.svg'}
+          className="w-[250px] md:w-[280px] lg:w-[336px]"
+        />
       </section>
       <section>
         <ThreeCardsSection

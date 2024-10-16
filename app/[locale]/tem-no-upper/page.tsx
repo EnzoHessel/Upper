@@ -2,11 +2,6 @@ import { useTranslations } from 'next-intl';
 import styles from '@/styles/home-page.module.css';
 import HeroSection from '@/components/hero-section';
 import ImageWithTextSection from '@/components/image-with-text-section';
-import {
-  ArrowTrendingUpIcon,
-  CurrencyDollarIcon,
-  DocumentCheckIcon
-} from '@heroicons/react/24/outline';
 import ThreeCardsSection from '@/components/three-cards-section';
 import ImageSection from '@/components/image-section';
 
@@ -64,11 +59,8 @@ export default function TemNoUpper() {
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
       </section>
-      <section className='flex flex-col gap-8'>
-        <h3 className="text-primary-foreground text-center">
-          {t('ImageSection2.titlePricipal')}
-        </h3>
-        <ImageSection
+      <section>
+        <ImageSection title={t('ImageSection2.titlePricipal')}
           image={"misao.svg"}
           textSections={section}
         />

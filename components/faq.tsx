@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
@@ -5,13 +7,20 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
+
 
 export function Faq() {
   const t = useTranslations('Faq');
 
   return (
     <>
-      <div className="flex flex-col gap-8">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col gap-8"
+      >
         <div className="w-full text-center flex flex-col gap-4">
           <h2 className="text-primary-foreground">{t('title')}</h2>
           <h5 className="text-[hsl(var(--secondary-content))]">
@@ -100,7 +109,7 @@ export function Faq() {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-      </div>
+      </motion.div>
     </>
   );
 }

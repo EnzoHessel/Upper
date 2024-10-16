@@ -88,10 +88,8 @@ export default function forYou() {
         <CardsSection title={t('JunteSeANos.title')} cards={cardsData} />
       </section>
       <section className='flex flex-col gap-8' >
-        <h3 className="text-primary-foreground text-center">
-          {t('ImageSection2.titlePricipal')}
-        </h3>
         <ImageSection
+          title={t('ImageSection2.titlePricipal')}
           image={"misao.svg"}
           textSections={section}
         />
