@@ -1,35 +1,57 @@
+"use client";
+
 import styles from '@/styles/three-cards-section.module.css';
 import Card from './card';
-import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
+
 
 
 interface CardInfo {
-  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: string
   title: string;
   description: string;
 }
 
 interface ThreeCardsSectionProps {
+  title?: string;
+  description?: string;
   cards: CardInfo[];
 }
 
-export default function ThreeCardsSection({ cards }: ThreeCardsSectionProps) {
-  const t = useTranslations('HomePage.UmaExperienciaTransparente');
+export default function ThreeCardsSection({ cards, title, description }: ThreeCardsSectionProps) {
 
   return (
-    <>
+    <div className="flex flex-col gap-8">
+      {title && (
+        <motion.h3
+          className="text-primary-foreground text-center"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {title}
+        </motion.h3>
+      )}
+      {description && (
+        <span className="text-[hsl(var(--secondary-content))] text-center">{description}</span>
+      )}
       <div className="text-center flex flex-col gap-8">
-        <div className={styles.cardsContainer}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, }}
+          className={styles.cardsContainer}
+        >
           {cards.map((card, index) => (
             <Card
-              key={index}
-              Icon={card.Icon}
-              title={card.title}
-              description={card.description}
+            icon={card.icon}
+            key={index}
+            title={card.title}
+            description={card.description}
             />
-          ))}
-        </div>
+          ))} 
+        </motion.div>
       </div>
-    </>
+  </div>
   );
 }

@@ -34,12 +34,7 @@ export default function Ajuda() {
 
   return (
     <div className={styles.homePageContainer}>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className='flex flex-col gap-8'
-      >
+      <section className='flex flex-col gap-8'>
         <div className="flex justify-center items-center gap-[18px]">
           <h3 className="text-primary-foreground text-center">
             {t('title1')}
@@ -47,13 +42,8 @@ export default function Ajuda() {
           <ChatBubbleLeftRightIcon className='w-6 h-6 text-primary-foreground' />
         </div>
         <SectionWithText title={t('section1.title')} subtitle={t('section1.subtitle')} sections={section} />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className='flex flex-col gap-8'
-      >
+      </section>
+      <section className='flex flex-col gap-8'>
         <div className="flex justify-center items-center gap-[18px]">
           <h3 className="text-primary-foreground text-center">
             {t('title2')}
@@ -61,7 +51,7 @@ export default function Ajuda() {
           <BriefcaseIcon className='w-6 h-6 text-primary-foreground' />
         </div>
         <SectionWithText title={t('section2.title')} sections={section2} />
-      </motion.section>
+      </section>
     </div>
   )
 }

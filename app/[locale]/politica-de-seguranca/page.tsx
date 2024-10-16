@@ -3,7 +3,6 @@
 import ImageWithTextSection from '@/components/image-with-text-section';
 import styles from '@/styles/home-page.module.css';
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
 
 interface SectionProps {
   title: string;
@@ -12,11 +11,7 @@ interface SectionProps {
 }
 
 const Section = ({ title, description, items }: SectionProps) => (
-  <motion.section
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-  >
+  <section>
     <div className='flex flex-col text-left'>
       <h2 className="text-primary-foreground pb-2">{title}</h2>
       <span className="text-[hsl(var(--secondary-content))]">{description}</span>
@@ -31,7 +26,7 @@ const Section = ({ title, description, items }: SectionProps) => (
         </ul>
       )}
     </div>
-  </motion.section>
+  </section>
 );
 
 export default function PoliticaDeSeguranca() {
@@ -39,18 +34,14 @@ export default function PoliticaDeSeguranca() {
 
   return (
     <div className={styles.homePageContainer}>
-         <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      <section>
         <ImageWithTextSection
           title={t('ImageSection.title')}
           description={t('ImageSection.description')}
           image={'segurança.svg'}
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
-      </motion.section>
+      </section>
       <Section
         title={t('Section1.title')}
         description={t('Section1.description')}
@@ -75,17 +66,13 @@ export default function PoliticaDeSeguranca() {
           t('Section3.item4')
         ]}
       />
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      <section>
         <div className='flex flex-col text-left'>
           <h2 className="text-primary-foreground pb-2">{t('Section4.title')}</h2>
           <span className="text-[hsl(var(--secondary-content))]">{t('Section4.description')}</span>
           <span className="text-[hsl(var(--secondary-content))]">{t('Section4.description2')}</span>
         </div>
-      </motion.section>
+      </section>
     </div>
   );
 }

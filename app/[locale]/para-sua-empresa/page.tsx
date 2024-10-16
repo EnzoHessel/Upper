@@ -5,20 +5,8 @@ import styles from '@/styles/home-page.module.css';
 import HeroSection from '@/components/hero-section';
 import ImageWithTextSection from '@/components/image-with-text-section';
 import CardsSection from '@/components/card-section';
-import {
-  AcademicCapIcon,
-  AdjustmentsHorizontalIcon,
-  ArrowTrendingUpIcon,
-  BanknotesIcon,
-  ChartBarIcon,
-  CreditCardIcon,
-  CurrencyDollarIcon,
-  DocumentCheckIcon,
-  Square3Stack3DIcon,
-} from '@heroicons/react/24/outline';
 import ThreeCardsSection from '@/components/three-cards-section';
 import ImageSection from '@/components/image-section';
-import { motion } from 'framer-motion';
 
 
 export default function ParaSuaEmpresa() {
@@ -41,22 +29,22 @@ export default function ParaSuaEmpresa() {
 
   const cardsData = [
     {
-      Icon: Square3Stack3DIcon,
+      icon: "/icons/Square3Stack3DIcon.svg",
       title: `${t("CardExperiência.card1.title")}`,
       description: `${t("CardExperiência.card1.description")}`
     },
     {
-      Icon: BanknotesIcon,
+      icon: "/icons/BanknotesIcon.svg",
       title: `${t("CardExperiência.card2.title")}`,
       description: `${t("CardExperiência.card2.description")}`
     },
     {
-      Icon: CreditCardIcon,
+      icon: "/icons/CreditCardIcon.svg",
       title: `${t("CardExperiência.card3.title")}`,
       description: `${t("CardExperiência.card3.description")}`
     },
     {
-      Icon: AdjustmentsHorizontalIcon,
+      icon: "/icons/AdjustmentsHorizontalIcon.svg",
       title: `${t("CardExperiência.card4.title")}`,
       description: `${t("CardExperiência.card4.description")}`
     }
@@ -64,17 +52,17 @@ export default function ParaSuaEmpresa() {
 
   const cardsData2 = [
     {
-      Icon: AdjustmentsHorizontalIcon,
+      icon: "/icons/AdjustmentsHorizontalIcon.svg",
       title: `${t("CardBenefícios.card1.title")}`,
       description: `${t("CardBenefícios.card1.description")}`
     },
     {
-      Icon: ChartBarIcon,
+      icon: "/icons/ChartBarIcon.svg",
       title: `${t("CardBenefícios.card2.title")}`,
       description: `${t("CardBenefícios.card2.description")}`
     },
     {
-      Icon: AcademicCapIcon,
+      icon: "/icons/AcademicCapIcon.svg",
       title: `${t("CardBenefícios.card3.title")}`,
       description: `${t("CardBenefícios.card3.description")}`
     },
@@ -82,17 +70,17 @@ export default function ParaSuaEmpresa() {
 
   const cardsData3 = [
     {
-      Icon: CurrencyDollarIcon,
+      icon: "/icons/CurrencyDollarIcon.svg",
       title: `${t("CardCursos.card1.title")}`,
       description: `${t("CardCursos.card1.description")}`
     },
     {
-      Icon: ArrowTrendingUpIcon,
+      icon: "/icons/ArrowTrendingUpIcon.svg",
       title: `${t("CardCursos.card2.title")}`,
       description: `${t("CardCursos.card2.description")}`
     },
     {
-      Icon: DocumentCheckIcon,
+      icon: "/icons/DocumentCheckIcon.svg",
       title: `${t("CardCursos.card3.title")}`,
       description: `${t("CardCursos.card3.description")}`
     },
@@ -100,89 +88,54 @@ export default function ParaSuaEmpresa() {
 
   return (
     <div className={styles.homePageContainer}>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      <section>
         <HeroSection
           title={t('HeroSection.title')}
           description={t('HeroSection.description')}
           primaryButton={t('HeroSection.primaryButton')}
           ghostButton={t('HeroSection.ghostButton')}
         />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+      </section>
+      <section>
         <ImageWithTextSection
           title={t('ImageSection.title')}
           description={t('ImageSection.description')}
           image={'bem-vindo-ao-upper-iphones.png'}
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="flex flex-col gap-8">
-          <h3 className="text-primary-foreground text-center">
-            {t('CardBenefícios.title')}
-          </h3>
-          <ThreeCardsSection cards={cardsData2}/>
-        </div>
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="flex flex-col gap-8">
-          <h3 className="text-primary-foreground text-center">
-            {t('CardExperiência.title')}
-          </h3>
-          <CardsSection cards={cardsData} />
-        </div>
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className='flex flex-col gap-8'
-      >
+      </section>
+      <section>
+        <ThreeCardsSection
+          title={t('CardBenefícios.title')}
+          cards={cardsData2}
+        />
+      </section>
+      <section>
+        <CardsSection title={t('CardExperiência.title')} cards={cardsData} />
+      </section>
+      <section className='flex flex-col gap-8'>
         <h3 className="text-primary-foreground text-center">
           {t('ImageSection2.titlePricipal')}
         </h3>
-        <ImageSection image={"misao.svg"} textSections={section} />
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="flex flex-col gap-8">
-          <h3 className="text-primary-foreground text-center">
-            {t('CardCursos.title')}
-          </h3>
-          <span className="text-[hsl(var(--secondary-content))] text-center">{t('CardCursos.description')}</span>
-          <ThreeCardsSection cards={cardsData3}/>
-        </div>
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
+        <ImageSection
+          image={"misao.svg"}
+          textSections={section}
+        />
+      </section>
+      <section>
+        <ThreeCardsSection
+          title={t('CardCursos.title')}
+          description={t('CardCursos.description')}
+          cards={cardsData3}
+        />
+      </section>
+      <section>
         <ImageWithTextSection
           title={t('JunteSeANos.card.title')}
           description={t('JunteSeANos.card.description')}
           image={'junte-se-a-nos.svg'}
         />
-      </motion.section>
+      </section>
     </div>
   );
 }

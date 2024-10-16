@@ -1,17 +1,17 @@
 import styles from '@/styles/card.module.css';
-import { ComponentType } from 'react';
+import Image from 'next/image';
 
 type CardProps = {
   title: string;
   description: string;
-  Icon: ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: string;
 };
 
-export default function Card({ title, description, Icon }: CardProps) {
+export default function Card({ title, description, icon }: CardProps) {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.imageContainer}>
-        <Icon className="w-14 h-14 stroke-[0.5] text-primary-foreground" />
+        <Image width={56} height={56} alt={title} src={icon} className="stroke-[0.5] text-primary-foreground" />
       </div>
       <div className="text-left w-full h-full flex flex-col gap-2">
         <h6 className="text-primary-foreground">{title}</h6>

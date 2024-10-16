@@ -1,7 +1,6 @@
 import CardsSection from '@/components/card-section';
 import ImageWithTextSection from '@/components/image-with-text-section';
 import styles from '@/styles/home-page.module.css';
-import { BoltIcon, CubeTransparentIcon, RocketLaunchIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
 import { useTranslations } from 'next-intl';
 
 export default function SobreUpper() {
@@ -9,22 +8,22 @@ export default function SobreUpper() {
 
   const cardsData = [
     {
-      Icon: RocketLaunchIcon,
+      icon: "/icons/RocketLaunchIcon.svg",
       title: `${t("card.card1.title")}`,
       description: `${t("card.card1.description")}`
     },
     {
-      Icon: CubeTransparentIcon,
+      icon: "/icons/CubeTransparentIcon.svg",
       title: `${t("card.card2.title")}`,
       description: `${t("card.card2.description")}`
     },
     {
-      Icon: BoltIcon,
+      icon: "/icons/BoltIcon.svg",
       title: `${t("card.card3.title")}`,
       description: `${t("card.card3.description")}`
     },
     {
-      Icon: ShieldCheckIcon,
+      icon: "/icons/ShieldCheckIcon.svg",
       title: `${t("card.card4.title")}`,
       description: `${t("card.card4.description")}`
     }
@@ -49,7 +48,10 @@ export default function SobreUpper() {
         />
       </section>
       <section>
-        <CardsSection title={t('card.title')} cards={cardsData} />
+        <CardsSection
+          title={t('card.title')}
+          cards={cardsData}
+        />
       </section>
     </div>
   )
