@@ -1,10 +1,9 @@
-"use client";
+"use client"
 
 import { SectionWithText } from "@/components/section-with-text";
 import { useTranslations } from "next-intl";
 import styles from '@/styles/home-page.module.css';
 import { BriefcaseIcon, ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
-import { motion } from 'framer-motion';
 
 export default function Ajuda() {
   const t = useTranslations('ajuda');

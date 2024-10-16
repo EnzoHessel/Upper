@@ -1,5 +1,3 @@
-"use client"
-
 import HeroSection from '@/components/hero-section';
 import ImageWithTextSection from '@/components/image-with-text-section';
 import ThreeCardsSection from '@/components/three-cards-section';

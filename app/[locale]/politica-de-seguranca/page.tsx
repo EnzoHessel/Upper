@@ -1,5 +1,3 @@
-"use client";
-
 import ImageWithTextSection from '@/components/image-with-text-section';
 import styles from '@/styles/home-page.module.css';
 import { useTranslations } from 'next-intl';

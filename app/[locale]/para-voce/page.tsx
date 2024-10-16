@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from 'next-intl';
 import styles from '@/styles/home-page.module.css';
 import HeroSection from '@/components/hero-section';
