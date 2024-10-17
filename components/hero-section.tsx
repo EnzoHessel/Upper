@@ -4,7 +4,8 @@ import styles from '@/styles/hero-section.module.css';
 import { Button } from './ui/button';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useState } from 'react';
+import ModalBaixarApp from './modal-baixarApp';
 
 type HeroSectionProps = {
   title: string;
@@ -19,6 +20,10 @@ export default function HeroSection({
   primaryButton,
   ghostButton,
 }: HeroSectionProps) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+
   return (
     <>
       <motion.div
@@ -38,7 +43,7 @@ export default function HeroSection({
           ))}
         </h3>
         <div className={styles.buttonsContainer}>
-          <Button variant={'default'} size={'lg'} className='w-[251px]'>
+          <Button variant={'default'} size={'lg'} className='w-[251px]' onClick={openModal}>
             {primaryButton}
           </Button>
           <Button variant={'ghost'} size={'lg'} className="w-[251px} px-[38px] flex gap-2 hover:text-background">
@@ -47,6 +52,8 @@ export default function HeroSection({
           </Button>
         </div>
       </motion.div>
+
+      {isModalOpen && <ModalBaixarApp />}
     </>
   );
 }
