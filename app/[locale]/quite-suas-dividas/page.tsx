@@ -20,7 +20,7 @@ export default function SobreUpper() {
         <ImageWithTextSection
           title={t('ImageSection.title')}
           description={t('ImageSection.description')}
-          image={'bem-vindo-ao-upper-iphones.png'}
+          image={'quite-sua-divida.png'}
           button={t('ImageSection.Button')}
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
@@ -29,7 +29,7 @@ export default function SobreUpper() {
         <ImageWithTextSection
           title={t('ImageSection2.title')}
           description={t('ImageSection2.description')}
-          image={'bem-vindo-ao-upper-iphones.png'}
+          image={'quite-sua-divida-2.png'}
           button={t('ImageSection2.Button')}
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
