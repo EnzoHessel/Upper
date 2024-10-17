@@ -55,14 +55,14 @@ export default function Home() {
           title={t('Solucoes.card.title')}
           description={t('Solucoes.card.description')}
           images={[
-            '/Carrousel/phone.svg',
-            '/Carrousel/phone-1.svg',
-            '/Carrousel/phone-2.svg',
-            '/Carrousel/phone-3.svg',
-            '/Carrousel/phone-4.svg',
-            '/Carrousel/phone-5.svg',
-            '/Carrousel/phone-6.svg',
-            '/Carrousel/phone-7.svg'
+            '/Carrousel/phone.png',
+            '/Carrousel/phone-1.png',
+            '/Carrousel/phone-2.png',
+            '/Carrousel/phone-3.png',
+            '/Carrousel/phone-4.png',
+            '/Carrousel/phone-5.png',
+            '/Carrousel/phone-6.png',
+            '/Carrousel/phone-7.png'
           ]}
         />
       </section>
