@@ -11,7 +11,8 @@
     "temNoUpper": "Tem no Upper",
     "educacaoFinanceira": "Educação financeira",
     "ajuda": "Ajuda",
-    "abrirConta": "Abrir conta"
+    "abrirConta": "Abrir conta",
+    "QuiteSuasDividas": "Quite suas dívidas"
   },
   "HamburguerMenu": {
     "title": "Menu",
@@ -443,6 +444,31 @@
       "content": {
         "heading": "Envie-nos um e-mail",
         "content": "carreiras@upper.com.br"
+      }
+    }
+  },
+  "QuiteSuasDividas": {
+    "HeroSection": {
+      "title": "Dê adeus às suas dívidas agora!",
+      "description": "Com a Upper, você está a um passo de virar o jogo. Não deixe suas dívidas controlarem sua vida! Seja Upper, seja imbatível!",
+      "primaryButton": "FALAR COM ESPECIALISTAS",
+      "ghostButton": "BAIXE O APP"
+    },
+    "ImageSection": {
+      "title": "Acabe com suas dívidas agora e respire aliviado!",
+      "description": "Chega de noites sem dormir! Nós quitamos sua dívida com até 50% de desconto. Com nosso relacionamento direto com instituições financeiras, escritórios jurídicos e assessorias especializadas, tornamos esse processo rápido e fácil. Com a Upper, você sai no lucro!",
+      "Button": "Limpar dívidas e começar de novo!"
+    },
+    "ImageSection2": {
+      "title": "Tenha todas as respostas que você precisa agora!",
+      "description": "Está com dúvidas? Não espere mais! Fale com nossos especialistas que vão te guiar, passo a passo, para quitar suas dívidas de uma vez por todas. Nós temos a solução que devolve sua paz de espírito.",
+      "Button": "Converse com nossos especialistas!"
+    },
+    "JunteSeANos": {
+      "title": "Resolva sua vida financeira em poucos cliques",
+      "card": {
+        "title": "Junte-se a Nós",
+        "description": "Estamos comprometidos em oferecer uma experiência financeira completa e acessível para todos. Venha fazer parte da revolução financeira com o Upper e descubra como podemos ajudá-lo a alcançar seus objetivos financeiros e investir no seu futuro com confiança."
       }
     }
   }

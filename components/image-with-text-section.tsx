@@ -3,11 +3,16 @@
 import Image from 'next/image';
 import styles from '@/styles/image-with-text-section.module.css';
 import { motion } from 'framer-motion';
+import { Button } from './ui/button';
+import { Link } from '@/navigation';
+import { useLocale } from 'next-intl';
 
 type ImageWithTextSectionProps = {
   sectionTitle?: string;
   title: string;
   description: string;
+  button?: string;
+  href?: string;
   image: string;
   className?: string;
 };
@@ -17,7 +22,11 @@ export default function ImageWithTextSection({
   title,
   description,
   image,
+  button,
+  href
 }: ImageWithTextSectionProps) {
+  const locale = useLocale();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -46,6 +55,13 @@ export default function ImageWithTextSection({
         <div className={styles.textSection}>
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.description}>{description}</p>
+          {button && (
+            <Button size={'default'} className='w-fit'>
+              <Link locale={locale} href={href || '#'}>
+                {button}
+              </Link>
+            </Button>
+          )}
         </div>
       </div>
     </motion.div>

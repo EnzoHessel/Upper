@@ -4,6 +4,7 @@ import styles from '@/styles/hero-section.module.css';
 import { Button } from './ui/button';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
+import React from 'react';
 
 type HeroSectionProps = {
   title: string;
@@ -27,7 +28,15 @@ export default function HeroSection({
        className={styles.heroSectionContainer}
       >
         <h1 className="text-primary-foreground">{title}</h1>
-        <h3 className="text-[hsl(var(--secondary-content))]">{description}</h3>
+        <h3 className="text-[hsl(var(--secondary-content))]">
+          {/* uso isso pra quebrar a linha (copilot que fez provavelmente vai precisar de manutenção) */}
+          {description.split(/(?<=[.!?])\s*/).map((sentence, index) => (
+            <React.Fragment key={index}>
+              {sentence}
+              <br />
+            </React.Fragment>
+          ))}
+        </h3>
         <div className={styles.buttonsContainer}>
           <Button variant={'default'} size={'lg'} className='w-[251px]'>
             {primaryButton}
