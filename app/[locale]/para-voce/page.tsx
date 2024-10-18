@@ -60,7 +60,7 @@ export default function forYou() {
       description: `${t("card2.card2.description")}`
     },
     {
-      icon: "/icons/documentCheckIcon.svg",
+      icon: "/icons/DocumentCheckIcon.svg",
       title: `${t("card2.card3.title")}`,
       description: `${t("card2.card3.description")}`
     },
