@@ -471,5 +471,10 @@
         "description": "Estamos comprometidos em oferecer uma experiência financeira completa e acessível para todos. Venha fazer parte da revolução financeira com o Upper e descubra como podemos ajudá-lo a alcançar seus objetivos financeiros e investir no seu futuro com confiança."
       }
     }
+  },
+  "ModalBaixarApp": {
+    "title": "Baixe o app e vá em ABRIR CONTA",
+    "description": "Ligue a câmera do seu celular e aponte para o QR Code abaixo. Você será redirecionado para a loja de aplicativos. Aí é só baixar o app do Inter e abrir a sua conta.",
+    "baixe": "BAIXE AGORA O APP"
   }
 }

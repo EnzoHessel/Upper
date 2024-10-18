@@ -52,8 +52,7 @@ export default function HeroSection({
           </Button>
         </div>
       </motion.div>
-
-      {isModalOpen && <ModalBaixarApp />}
+      {isModalOpen && <ModalBaixarApp isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
     </>
   );
 }

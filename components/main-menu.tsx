@@ -7,10 +7,17 @@ import HamburguerMenu from './hamburguer-menu';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/navigation';
 import { motion } from 'framer-motion';
+import ModalBaixarApp from './modal-baixarApp';
+import { useState } from 'react';
 
 export default function MainMenu() {
   const t = useTranslations('MainMenu');
   const locale = useLocale();
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+
 
   return (
     <nav
@@ -80,6 +87,7 @@ export default function MainMenu() {
             size={'lg'}
             className={styles.buttonAbrirConta}
             aria-label={t('abrirConta')}
+            onClick={openModal}
           >
             <span>{t('abrirConta')}</span>
           </Button>
@@ -88,6 +96,7 @@ export default function MainMenu() {
       <div className={styles.hamburguerMenu}>
         <HamburguerMenu />
       </div>
+      {isModalOpen && <ModalBaixarApp isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
     </nav>
   );
 }
