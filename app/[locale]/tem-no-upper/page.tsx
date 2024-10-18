@@ -49,6 +49,7 @@ export default function TemNoUpper() {
           description={t('HeroSection.description')}
           primaryButton={t('HeroSection.primaryButton')}
           ghostButton={t('HeroSection.ghostButton')}
+          baixarApp
         />
       </section>
       <section>

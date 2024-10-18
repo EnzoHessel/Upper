@@ -34,6 +34,7 @@ export default function EducacaoFinanceira() {
           description={t('HeroSection.description')}
           primaryButton={t('HeroSection.primaryButton')}
           ghostButton={t('HeroSection.ghostButton')}
+          baixarApp
         />
       </section>
       <section>

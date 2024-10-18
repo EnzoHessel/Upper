@@ -55,20 +55,20 @@ export default function MainMenu() {
           </Button>
           <Button variant={'link'} className="p-0 uppercase">
             <Link
-              href={`/educacao-financeira`}
-              locale={locale}
-              aria-label={t('educacaoFinanceira')}
-            >
-              <span>{t('educacaoFinanceira')}</span>
-            </Link>
-          </Button>
-          <Button variant={'link'} className="p-0 uppercase">
-            <Link
               href={`/quite-suas-dividas`}
               locale={locale}
               aria-label={t('QuiteSuasDividas')}
             >
               <span>{t('QuiteSuasDividas')}</span>
+            </Link>
+          </Button>
+          <Button variant={'link'} className="p-0 uppercase">
+            <Link
+              href={`/educacao-financeira`}
+              locale={locale}
+              aria-label={t('educacaoFinanceira')}
+            >
+              <span>{t('educacaoFinanceira')}</span>
             </Link>
           </Button>
           <Button variant={'link'} className="p-0 uppercase">

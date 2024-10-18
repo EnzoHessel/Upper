@@ -12,6 +12,7 @@ type HeroSectionProps = {
   description: string;
   primaryButton: string;
   ghostButton: string;
+  baixarApp?: boolean
 };
 
 export default function HeroSection({
@@ -19,6 +20,7 @@ export default function HeroSection({
   description,
   primaryButton,
   ghostButton,
+  baixarApp
 }: HeroSectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -43,10 +45,17 @@ export default function HeroSection({
           ))}
         </h3>
         <div className={styles.buttonsContainer}>
-          <Button variant={'default'} size={'lg'} className='w-[251px]' onClick={openModal}>
-            {primaryButton}
-          </Button>
-          <Button variant={'ghost'} size={'lg'} className="w-[251px} px-[38px] flex gap-2 hover:text-background">
+            {baixarApp && (
+              <Button variant={'default'} size={'lg'} className='w-[251px]' onClick={openModal}>
+                {primaryButton}
+              </Button>
+            )}
+            {!baixarApp && (
+              <Button variant={'default'} size={'lg'} className='w-[251px]'>
+                {primaryButton}
+              </Button>
+            )}
+          <Button variant={'ghost'} size={'lg'} className="w-[251px} px-[38px] flex gap-2 hover:text-background" onClick={openModal}>
             {ghostButton}
             <ArrowRightIcon className="size-6" />
           </Button>

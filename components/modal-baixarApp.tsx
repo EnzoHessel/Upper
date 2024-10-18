@@ -30,6 +30,12 @@ const ModalBaixarApp: React.FC<ModalBaixarAppProps> = ({ onClose, isOpen }) => {
 
   if (!showModal) return null;
 
+  const handleBackgroundClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
     <div
       className={clsx(
@@ -39,6 +45,7 @@ const ModalBaixarApp: React.FC<ModalBaixarAppProps> = ({ onClose, isOpen }) => {
           'opacity-0 pointer-events-none': !animateModal
         }
       )}
+      onClick={handleBackgroundClick}
     >
       <div
         className={clsx(
