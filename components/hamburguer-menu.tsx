@@ -1,4 +1,4 @@
-import { AcademicCapIcon, ArrowDownCircleIcon, Bars3Icon, BuildingLibraryIcon, BuildingOffice2Icon, HomeIcon, QuestionMarkCircleIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { AcademicCapIcon, ArrowDownCircleIcon, Bars3Icon, BuildingLibraryIcon, BuildingOffice2Icon, HomeIcon, NewspaperIcon, QuestionMarkCircleIcon, UserIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useLocale, useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Button } from './ui/button';
@@ -19,9 +19,10 @@ export default function HamburguerMenu() {
     { icon: HomeIcon, text: t("home"), href: "/" },
     { icon: UserIcon, text: t("paraVoce"), href: "/para-voce" },
     { icon: BuildingOffice2Icon, text: t("paraSuaEmpresa"), href: "/para-sua-empresa" },
-    { icon: BuildingLibraryIcon, text: t("educacaoFinanceira"), href: "/educacao-financeira" },
-    { icon: AcademicCapIcon, text: t("ajuda"), href: "/ajuda" },
-    { icon: QuestionMarkCircleIcon, text: t("abrirConta"), href: "#" }
+    { icon: BuildingLibraryIcon, text: t("temNoUpper"), href: "/tem-no-upper" },
+    { icon: NewspaperIcon, text: t("QuiteSuasDividas"), href: "/quite-suas-dividas" },
+    { icon: AcademicCapIcon, text: t("educacaoFinanceira"), href: "/educacao-financeira" },
+    { icon: QuestionMarkCircleIcon, text: t("ajuda"), href: "/ajuda" },
   ];
 
   return (
