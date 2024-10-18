@@ -1,6 +1,9 @@
+"use client"
+
 import ImageWithTextSection from '@/components/image-with-text-section';
 import styles from '@/styles/home-page.module.css';
 import { useTranslations } from 'next-intl';
+import { motion } from 'framer-motion';
 
 interface SectionProps {
   title: string;
@@ -9,7 +12,11 @@ interface SectionProps {
 }
 
 const Section = ({ title, description, items }: SectionProps) => (
-  <section>
+  <motion.section
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+  >
     <div className='flex flex-col text-left'>
       <h2 className="text-primary-foreground pb-2">{title}</h2>
       <span className="text-[hsl(var(--secondary-content))]">{description}</span>
@@ -24,7 +31,7 @@ const Section = ({ title, description, items }: SectionProps) => (
         </ul>
       )}
     </div>
-  </section>
+  </motion.section>
 );
 
 export default function PoliticaDeSeguranca() {
@@ -64,13 +71,17 @@ export default function PoliticaDeSeguranca() {
           t('Section3.item4')
         ]}
       />
-      <section>
+      <motion.section
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className='flex flex-col text-left'>
           <h2 className="text-primary-foreground pb-2">{t('Section4.title')}</h2>
           <span className="text-[hsl(var(--secondary-content))]">{t('Section4.description')}</span>
           <span className="text-[hsl(var(--secondary-content))]">{t('Section4.description2')}</span>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }
