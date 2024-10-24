@@ -34,7 +34,7 @@ export default function Home() {
           description={t('HeroSection.description')}
           primaryButton={t('HeroSection.primaryButton')}
           ghostButton={t('HeroSection.ghostButton')}
-          baixarApp 
+          baixarApp
         />
       </section>
       <section>

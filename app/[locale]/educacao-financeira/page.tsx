@@ -53,6 +53,8 @@ export default function EducacaoFinanceira() {
           image={'cursos.svg'}
           className="w-[250px] md:w-[280px] lg:w-[336px]"
         />
+      </section>
+      <section>
         <ImageWithTextSection
           title={t('section.ImageSection3.title')}
           description={t('section.ImageSection3.description')}
