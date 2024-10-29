@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import styles from '@/styles/home-page.module.css';
 import ThreeCardsSection from '@/components/three-cards-section';
 import ImageWithCarrousel from '@/components/Image-with-carrousel';
+import CookieBanner from '@/components/cookie-banner';
 
 export default function Home() {
   const t = useTranslations('HomePage');

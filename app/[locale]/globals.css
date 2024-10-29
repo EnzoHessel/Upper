@@ -129,7 +129,7 @@ span {
   width: 1000px;
   display: flex;
   flex-direction: column;
-  @apply gap-16;
+  @apply gap-16 relative;
 }
 
 .footerContainer {

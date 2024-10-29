@@ -62,10 +62,10 @@ export default async function RootLayout({
               <main className={'containerPrincipal'}>
                 <section className={'contentPrincipal'}>
                   {children}
+                    <section className="fixed bottom-8 right-8 md:right-16 lg:right-24">
+                      <CookieBanner />
+                    </section>
                   <Faq />
-                  <section className="fixed bottom-3 right-4">
-                    <CookieBanner />
-                  </section>
                 </section>
               </main>
               {/* por algumo motivo que nao sei explicar o footer so fuciona se ele estiver nessa div nas outras ele joga o header para fora */}
