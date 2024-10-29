@@ -18,13 +18,10 @@ export default function MainMenu() {
 
   const openModal = () => setIsModalOpen(true);
 
-
   return (
-    <nav
-      className={styles.mainMenuContainer}
-      aria-label="Main Menu"
-    >
-      <motion.div className={styles.mainMenuContent}
+    <nav className={styles.mainMenuContainer} aria-label="Main Menu">
+      <motion.div
+        className={styles.mainMenuContent}
         initial="hidden"
         animate="visible"
         variants={{
@@ -33,7 +30,11 @@ export default function MainMenu() {
         }}
         transition={{ duration: 0.5 }}
       >
-        <Link href={`/`} locale={locale} className="relative h-[37px] w-[119px] cursor-pointer" >
+        <Link
+          href={`/`}
+          locale={locale}
+          className="relative h-[37px] w-[119px] cursor-pointer"
+        >
           <Image
             src={'/logo-horizontal-upper.svg'}
             alt="Upper logo"
@@ -72,11 +73,7 @@ export default function MainMenu() {
             </Link>
           </Button>
           <Button variant={'link'} className="p-0 uppercase">
-            <Link
-              href={`/ajuda`}
-              locale={locale}
-              aria-label={t('ajuda')}
-            >
+            <Link href={`/ajuda`} locale={locale} aria-label={t('ajuda')}>
               <span>{t('ajuda')}</span>
             </Link>
           </Button>
@@ -96,7 +93,12 @@ export default function MainMenu() {
       <div className={styles.hamburguerMenu}>
         <HamburguerMenu />
       </div>
-      {isModalOpen && <ModalBaixarApp isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
+      {isModalOpen && (
+        <ModalBaixarApp
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
     </nav>
   );
 }

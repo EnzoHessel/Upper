@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @apply gap-8 items-center ;
+  @apply gap-8 items-center;
 }
 
 @media screen and (max-width: 1024px) {

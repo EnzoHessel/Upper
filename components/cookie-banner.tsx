@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -10,7 +10,6 @@ const CookieBanner = () => {
   const t = useTranslations('CookieBanner');
   const [accepted, setAccepted] = useState(false);
   const locale = useLocale();
-
 
   useEffect(() => {
     const cookieConsent = localStorage.getItem('cookieConsent');
@@ -33,16 +32,18 @@ const CookieBanner = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 50 }}
     >
-      <div className='w-[302px] h-[69px]'>
-        <span className='text-[hsl(var(--secondary-content))] font-medium leading-[16.94px] block '>{t("title")}</span>
-        <span className='text-primary-foreground leading-[16.94px] block hover:underline cursor-pointer'>
-          <Link href={"/politica-de-seguranca"} locale={locale}>
-            {t("politica")}
+      <div className="w-[302px] h-[69px]">
+        <span className="text-[hsl(var(--secondary-content))] font-medium leading-[16.94px] block ">
+          {t('title')}
+        </span>
+        <span className="text-primary-foreground leading-[16.94px] block hover:underline cursor-pointer">
+          <Link href={'/politica-de-seguranca'} locale={locale}>
+            {t('politica')}
           </Link>
         </span>
       </div>
       <Button onClick={handleAccept} size={'lg'}>
-        {t("button")}
+        {t('button')}
       </Button>
     </motion.div>
   );

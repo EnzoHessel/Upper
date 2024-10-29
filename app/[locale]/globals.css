@@ -63,7 +63,7 @@
     --chart-5: 340 75% 55%;
     --radius: 0.5rem;
     --hover: 50, 100%, 67%;
-    --active: 51, 100%, 25%
+    --active: 51, 100%, 25%;
   }
 }
 @layer base {

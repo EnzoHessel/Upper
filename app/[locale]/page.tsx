@@ -11,20 +11,20 @@ export default function Home() {
 
   const cardsData = [
     {
-      icon: "/icons/BuildingLibraryIcon.svg",
-      title: `${t("UmaExperienciaTransparente.card1.title")}`,
-      description: `${t("UmaExperienciaTransparente.card1.description")}`
+      icon: '/icons/BuildingLibraryIcon.svg',
+      title: `${t('UmaExperienciaTransparente.card1.title')}`,
+      description: `${t('UmaExperienciaTransparente.card1.description')}`,
     },
     {
-      icon: "/icons/ChartBarIcon.svg",
-      title: `${t("UmaExperienciaTransparente.card2.title")}`,
-      description: `${t("UmaExperienciaTransparente.card2.description")}`
+      icon: '/icons/ChartBarIcon.svg',
+      title: `${t('UmaExperienciaTransparente.card2.title')}`,
+      description: `${t('UmaExperienciaTransparente.card2.description')}`,
     },
     {
-      icon: "/icons/CurrencyDollarIcon.svg",
-      title: `${t("UmaExperienciaTransparente.card3.title")}`,
-      description: `${t("UmaExperienciaTransparente.card3.description")}`
-    }
+      icon: '/icons/CurrencyDollarIcon.svg',
+      title: `${t('UmaExperienciaTransparente.card3.title')}`,
+      description: `${t('UmaExperienciaTransparente.card3.description')}`,
+    },
   ];
 
   return (
@@ -64,7 +64,7 @@ export default function Home() {
             '/Carrousel/phone-4.png',
             '/Carrousel/phone-5.png',
             '/Carrousel/phone-6.png',
-            '/Carrousel/phone-7.png'
+            '/Carrousel/phone-7.png',
           ]}
         />
       </section>

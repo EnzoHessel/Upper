@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Accordion,
@@ -8,7 +8,6 @@ import {
 } from '@/components/ui/accordion';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-
 
 export function Faq() {
   const t = useTranslations('Faq');
@@ -100,7 +99,7 @@ export function Faq() {
               <span>{t('9.answer')}</span>
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-10" className='border-none'>
+          <AccordionItem value="item-10" className="border-none">
             <AccordionTrigger>
               <h6>{t('10.question')}</h6>
             </AccordionTrigger>

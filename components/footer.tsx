@@ -1,6 +1,6 @@
 import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { Button } from './ui/button';
 import { Link } from '@/navigation';
 
@@ -12,9 +12,8 @@ interface SectionProps {
 
 interface CommunicationSectionProps {
   title: string;
-  items: { text: string; text2?: string; }[];
+  items: { text: string; text2?: string }[];
 }
-
 
 function Section({ title, items }: SectionProps) {
   const locale = useLocale();
@@ -26,7 +25,11 @@ function Section({ title, items }: SectionProps) {
       </h3>
       <ul className="flex flex-col gap-3">
         {items.map((item, idx) => (
-          <Button variant={"link"} key={idx} className="px-0 justify-start py-0">
+          <Button
+            variant={'link'}
+            key={idx}
+            className="px-0 justify-start py-0"
+          >
             <Link href={item.href} locale={locale}>
               <p>{item.text}</p>
             </Link>
@@ -45,9 +48,16 @@ function CommunicationSections({ title, items }: CommunicationSectionProps) {
       </h3>
       <ul className="flex flex-col gap-3">
         {items.map((item, idx) => (
-          <li key={idx} className="font-medium text-[hsl(var(--secondary-content))]">
+          <li
+            key={idx}
+            className="font-medium text-[hsl(var(--secondary-content))]"
+          >
             {item.text}
-            {item.text2 && <p className="font-medium text-[hsl(var(--secondary-content))]">{item.text2}</p>}
+            {item.text2 && (
+              <p className="font-medium text-[hsl(var(--secondary-content))]">
+                {item.text2}
+              </p>
+            )}
           </li>
         ))}
       </ul>
@@ -71,7 +81,7 @@ const getFooterData = (t: (key: string) => string) => ({
       title: t('Empresa.title'),
       items: [
         { text: t('Empresa.Sobre'), href: '/sobre-o-upper' },
-        { text: t('Empresa.Carreiras'), href: '/#' }
+        { text: t('Empresa.Carreiras'), href: '/#' },
       ],
     },
   ],
@@ -108,7 +118,7 @@ export default function Footer() {
               alt="Logo"
               fill
               quality={100}
-              className='object-cover'
+              className="object-cover"
               draggable={false}
             />
           </div>
@@ -146,7 +156,11 @@ export default function Footer() {
             <Section key={index} title={section.title} items={section.items} />
           ))}
           {communicationSections.map((section, index) => (
-            <CommunicationSections key={index} title={section.title} items={section.items}/>
+            <CommunicationSections
+              key={index}
+              title={section.title}
+              items={section.items}
+            />
           ))}
         </div>
 
@@ -164,10 +178,16 @@ export default function Footer() {
           {/* TODO colocar hover e links */}
           <div className="flex gap-6 items-start order-1 lg:order-none">
             <Link href="#">
-              <FaLinkedin size={24} className="text-[#9D9D9D] hover:text-white duration-200"/>
+              <FaLinkedin
+                size={24}
+                className="text-[#9D9D9D] hover:text-white duration-200"
+              />
             </Link>
             <Link href="#">
-              <FaFacebook size={24} className="text-[#9D9D9D] hover:text-white duration-200"/>
+              <FaFacebook
+                size={24}
+                className="text-[#9D9D9D] hover:text-white duration-200"
+              />
             </Link>
           </div>
         </div>

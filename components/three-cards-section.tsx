@@ -1,13 +1,11 @@
-"use client";
+'use client';
 
 import styles from '@/styles/three-cards-section.module.css';
 import Card from './card';
 import { motion } from 'framer-motion';
 
-
-
 interface CardInfo {
-  icon: string
+  icon: string;
   title: string;
   description: string;
 }
@@ -18,8 +16,11 @@ interface ThreeCardsSectionProps {
   cards: CardInfo[];
 }
 
-export default function ThreeCardsSection({ cards, title, description }: ThreeCardsSectionProps) {
-
+export default function ThreeCardsSection({
+  cards,
+  title,
+  description,
+}: ThreeCardsSectionProps) {
   return (
     <div className="flex flex-col gap-8">
       {title && (
@@ -46,19 +47,19 @@ export default function ThreeCardsSection({ cards, title, description }: ThreeCa
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, }}
+          transition={{ duration: 0.5 }}
           className={styles.cardsContainer}
         >
           {cards.map((card, index) => (
             <Card
-            icon={card.icon}
-            key={index}
-            title={card.title}
-            description={card.description}
+              icon={card.icon}
+              key={index}
+              title={card.title}
+              description={card.description}
             />
           ))}
         </motion.div>
       </div>
-  </div>
+    </div>
   );
 }

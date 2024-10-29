@@ -1,11 +1,10 @@
-"use client"
+'use client';
 
 import styles from '@/styles/top-menu.module.css';
 import { useLocale, useTranslations } from 'next-intl';
 import { Button } from './ui/button';
 import { Link } from '@/navigation';
 import { motion } from 'framer-motion';
-
 
 export default function TopMenu() {
   const t = useTranslations('TopMenu');

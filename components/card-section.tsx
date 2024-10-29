@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
 import Card from './card';
 import { motion } from 'framer-motion';
-
 
 interface CardData {
   icon: string;
@@ -16,7 +15,6 @@ interface CardsSectionProps {
 }
 
 export default function CardsSection({ cards, title }: CardsSectionProps) {
-
   return (
     <div className="flex flex-col gap-8">
       {title && (

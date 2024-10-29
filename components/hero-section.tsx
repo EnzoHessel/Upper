@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 import styles from '@/styles/hero-section.module.css';
 import { Button } from './ui/button';
@@ -12,7 +12,7 @@ type HeroSectionProps = {
   description: string;
   primaryButton: string;
   ghostButton: string;
-  baixarApp?: boolean
+  baixarApp?: boolean;
 };
 
 export default function HeroSection({
@@ -20,7 +20,7 @@ export default function HeroSection({
   description,
   primaryButton,
   ghostButton,
-  baixarApp
+  baixarApp,
 }: HeroSectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -29,10 +29,10 @@ export default function HeroSection({
   return (
     <>
       <motion.div
-       initial={{ opacity: 0, y: 20 }}
-       animate={{ opacity: 1, y: 0 }}
-       transition={{ duration: 0.5 }}
-       className={styles.heroSectionContainer}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className={styles.heroSectionContainer}
       >
         <h1 className="text-primary-foreground">{title}</h1>
         <h3 className="text-[hsl(var(--secondary-content))]">
@@ -45,23 +45,38 @@ export default function HeroSection({
           ))}
         </h3>
         <div className={styles.buttonsContainer}>
-            {baixarApp && (
-              <Button variant={'default'} size={'lg'} className='w-[251px]' onClick={openModal}>
-                {primaryButton}
-              </Button>
-            )}
-            {!baixarApp && (
-              <Button variant={'default'} size={'lg'} className='w-[251px]'>
-                {primaryButton}
-              </Button>
-            )}
-          <Button variant={'ghost'} size={'lg'} className="w-[251px} px-[38px] flex gap-2 hover:text-background" onClick={openModal}>
+          {baixarApp && (
+            <Button
+              variant={'default'}
+              size={'lg'}
+              className="w-[251px]"
+              onClick={openModal}
+            >
+              {primaryButton}
+            </Button>
+          )}
+          {!baixarApp && (
+            <Button variant={'default'} size={'lg'} className="w-[251px]">
+              {primaryButton}
+            </Button>
+          )}
+          <Button
+            variant={'ghost'}
+            size={'lg'}
+            className="w-[251px} px-[38px] flex gap-2 hover:text-background"
+            onClick={openModal}
+          >
             {ghostButton}
             <ArrowRightIcon className="size-6" />
           </Button>
         </div>
       </motion.div>
-      {isModalOpen && <ModalBaixarApp isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
+      {isModalOpen && (
+        <ModalBaixarApp
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
     </>
   );
 }

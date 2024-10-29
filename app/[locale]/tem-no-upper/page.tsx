@@ -11,34 +11,34 @@ export default function TemNoUpper() {
   const section = [
     {
       title: t('ImageSection2.title'),
-      description: t('ImageSection2.description')
+      description: t('ImageSection2.description'),
     },
     {
       title: t('ImageSection2.title2'),
-      description: t('ImageSection2.description2')
+      description: t('ImageSection2.description2'),
     },
     {
       title: t('ImageSection2.title3'),
-      description: t('ImageSection2.description3')
-    }
+      description: t('ImageSection2.description3'),
+    },
   ];
 
   const cardsData = [
     {
-      icon: "/icons/CurrencyDollarIcon.svg",
-      title: `${t("CardCursos.card1.title")}`,
-      description: `${t("CardCursos.card1.description")}`
+      icon: '/icons/CurrencyDollarIcon.svg',
+      title: `${t('CardCursos.card1.title')}`,
+      description: `${t('CardCursos.card1.description')}`,
     },
     {
-      icon: "/icons/ArrowTrendingUpIcon.svg",
-      title: `${t("CardCursos.card2.title")}`,
-      description: `${t("CardCursos.card2.description")}`
+      icon: '/icons/ArrowTrendingUpIcon.svg',
+      title: `${t('CardCursos.card2.title')}`,
+      description: `${t('CardCursos.card2.description')}`,
     },
     {
-      icon: "/icons/DocumentCheckIcon.svg",
-      title: `${t("CardCursos.card3.title")}`,
-      description: `${t("CardCursos.card3.description")}`
-    }
+      icon: '/icons/DocumentCheckIcon.svg',
+      title: `${t('CardCursos.card3.title')}`,
+      description: `${t('CardCursos.card3.description')}`,
+    },
   ];
 
   return (
@@ -61,8 +61,9 @@ export default function TemNoUpper() {
         />
       </section>
       <section>
-        <ImageSection title={t('ImageSection2.titlePricipal')}
-          image={"misao.svg"}
+        <ImageSection
+          title={t('ImageSection2.titlePricipal')}
+          image={'misao.svg'}
           textSections={section}
         />
       </section>

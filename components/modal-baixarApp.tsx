@@ -42,7 +42,7 @@ const ModalBaixarApp: React.FC<ModalBaixarAppProps> = ({ onClose, isOpen }) => {
         'fixed top-0 right-0 z-50 w-full h-full flex justify-end bg-black bg-opacity-50 transition-opacity duration-300 ease-in-out',
         {
           'opacity-100': animateModal,
-          'opacity-0 pointer-events-none': !animateModal
+          'opacity-0 pointer-events-none': !animateModal,
         }
       )}
       onClick={handleBackgroundClick}
@@ -52,7 +52,7 @@ const ModalBaixarApp: React.FC<ModalBaixarAppProps> = ({ onClose, isOpen }) => {
           'pt-16 px-4 md:px-16 lg:px-4 bg-background md:w-full lg:max-w-[557px] w-full text-white transition-transform duration-300 ease-in-out transform',
           {
             'translate-x-0': animateModal,
-            'translate-x-full': !animateModal
+            'translate-x-full': !animateModal,
           }
         )}
       >
@@ -61,7 +61,9 @@ const ModalBaixarApp: React.FC<ModalBaixarAppProps> = ({ onClose, isOpen }) => {
         </button>
         <div className="flex flex-col gap-4 pb-4">
           <h4>{t('title')}</h4>
-          <span className="text-2xl text-[hsl(var(--secondary-content))]">{t('description')}</span>
+          <span className="text-2xl text-[hsl(var(--secondary-content))]">
+            {t('description')}
+          </span>
           <div className="relative w-[169px] h-[169px]">
             <Image src="/qrCode.png" fill className="contain" alt="fill" />
           </div>

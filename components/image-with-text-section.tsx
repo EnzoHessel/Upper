@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import Image from 'next/image';
 import styles from '@/styles/image-with-text-section.module.css';
@@ -23,7 +23,7 @@ export default function ImageWithTextSection({
   description,
   image,
   button,
-  href
+  href,
 }: ImageWithTextSectionProps) {
   const locale = useLocale();
 
@@ -35,9 +35,7 @@ export default function ImageWithTextSection({
       className="flex flex-col gap-8"
     >
       {sectionTitle && (
-        <h3 className="text-primary-foreground text-center">
-          {sectionTitle}
-        </h3>
+        <h3 className="text-primary-foreground text-center">{sectionTitle}</h3>
       )}
       <div className={styles.imageWithTextSection}>
         <div className={styles.imageSection}>
@@ -56,7 +54,7 @@ export default function ImageWithTextSection({
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.description}>{description}</p>
           {button && (
-            <Button size={'default'} className='w-fit'>
+            <Button size={'default'} className="w-fit">
               <Link locale={locale} href={href || '#'}>
                 {button}
               </Link>

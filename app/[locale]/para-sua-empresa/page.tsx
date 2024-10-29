@@ -6,81 +6,80 @@ import CardsSection from '@/components/card-section';
 import ThreeCardsSection from '@/components/three-cards-section';
 import ImageSection from '@/components/image-section';
 
-
 export default function ParaSuaEmpresa() {
   const t = useTranslations('ParaSuaEmpresa');
 
   const section = [
     {
       title: t('ImageSection2.title'),
-      description: t('ImageSection2.description')
+      description: t('ImageSection2.description'),
     },
     {
       title: t('ImageSection2.title2'),
-      description: t('ImageSection2.description2')
+      description: t('ImageSection2.description2'),
     },
     {
       title: t('ImageSection2.title3'),
-      description: t('ImageSection2.description3')
-    }
+      description: t('ImageSection2.description3'),
+    },
   ];
 
   const cardsData = [
     {
-      icon: "/icons/Square3Stack3DIcon.svg",
-      title: `${t("CardExperiência.card1.title")}`,
-      description: `${t("CardExperiência.card1.description")}`
+      icon: '/icons/Square3Stack3DIcon.svg',
+      title: `${t('CardExperiência.card1.title')}`,
+      description: `${t('CardExperiência.card1.description')}`,
     },
     {
-      icon: "/icons/BanknotesIcon.svg",
-      title: `${t("CardExperiência.card2.title")}`,
-      description: `${t("CardExperiência.card2.description")}`
+      icon: '/icons/BanknotesIcon.svg',
+      title: `${t('CardExperiência.card2.title')}`,
+      description: `${t('CardExperiência.card2.description')}`,
     },
     {
-      icon: "/icons/CreditCardIcon.svg",
-      title: `${t("CardExperiência.card3.title")}`,
-      description: `${t("CardExperiência.card3.description")}`
+      icon: '/icons/CreditCardIcon.svg',
+      title: `${t('CardExperiência.card3.title')}`,
+      description: `${t('CardExperiência.card3.description')}`,
     },
     {
-      icon: "/icons/AdjustmentsHorizontalIcon.svg",
-      title: `${t("CardExperiência.card4.title")}`,
-      description: `${t("CardExperiência.card4.description")}`
-    }
+      icon: '/icons/AdjustmentsHorizontalIcon.svg',
+      title: `${t('CardExperiência.card4.title')}`,
+      description: `${t('CardExperiência.card4.description')}`,
+    },
   ];
 
   const cardsData2 = [
     {
-      icon: "/icons/AdjustmentsHorizontalIcon.svg",
-      title: `${t("CardBenefícios.card1.title")}`,
-      description: `${t("CardBenefícios.card1.description")}`
+      icon: '/icons/AdjustmentsHorizontalIcon.svg',
+      title: `${t('CardBenefícios.card1.title')}`,
+      description: `${t('CardBenefícios.card1.description')}`,
     },
     {
-      icon: "/icons/ChartBarIcon.svg",
-      title: `${t("CardBenefícios.card2.title")}`,
-      description: `${t("CardBenefícios.card2.description")}`
+      icon: '/icons/ChartBarIcon.svg',
+      title: `${t('CardBenefícios.card2.title')}`,
+      description: `${t('CardBenefícios.card2.description')}`,
     },
     {
-      icon: "/icons/AcademicCapIcon.svg",
-      title: `${t("CardBenefícios.card3.title")}`,
-      description: `${t("CardBenefícios.card3.description")}`
+      icon: '/icons/AcademicCapIcon.svg',
+      title: `${t('CardBenefícios.card3.title')}`,
+      description: `${t('CardBenefícios.card3.description')}`,
     },
   ];
 
   const cardsData3 = [
     {
-      icon: "/icons/CurrencyDollarIcon.svg",
-      title: `${t("CardCursos.card1.title")}`,
-      description: `${t("CardCursos.card1.description")}`
+      icon: '/icons/CurrencyDollarIcon.svg',
+      title: `${t('CardCursos.card1.title')}`,
+      description: `${t('CardCursos.card1.description')}`,
     },
     {
-      icon: "/icons/ArrowTrendingUpIcon.svg",
-      title: `${t("CardCursos.card2.title")}`,
-      description: `${t("CardCursos.card2.description")}`
+      icon: '/icons/ArrowTrendingUpIcon.svg',
+      title: `${t('CardCursos.card2.title')}`,
+      description: `${t('CardCursos.card2.description')}`,
     },
     {
-      icon: "/icons/DocumentCheckIcon.svg",
-      title: `${t("CardCursos.card3.title")}`,
-      description: `${t("CardCursos.card3.description")}`
+      icon: '/icons/DocumentCheckIcon.svg',
+      title: `${t('CardCursos.card3.title')}`,
+      description: `${t('CardCursos.card3.description')}`,
     },
   ];
 
@@ -92,7 +91,7 @@ export default function ParaSuaEmpresa() {
           description={t('HeroSection.description')}
           primaryButton={t('HeroSection.primaryButton')}
           ghostButton={t('HeroSection.ghostButton')}
-          baixarApp 
+          baixarApp
         />
       </section>
       <section>
@@ -112,10 +111,10 @@ export default function ParaSuaEmpresa() {
       <section>
         <CardsSection title={t('CardExperiência.title')} cards={cardsData} />
       </section>
-      <section className='flex flex-col gap-8'>
+      <section className="flex flex-col gap-8">
         <ImageSection
           title={t('ImageSection2.titlePricipal')}
-          image={"misao.svg"}
+          image={'misao.svg'}
           textSections={section}
         />
       </section>

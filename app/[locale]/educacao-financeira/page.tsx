@@ -4,25 +4,24 @@ import ThreeCardsSection from '@/components/three-cards-section';
 import styles from '@/styles/home-page.module.css';
 import { useTranslations } from 'next-intl';
 
-
 export default function EducacaoFinanceira() {
   const t = useTranslations('EducacaoFinanceira');
 
   const cardsData = [
     {
-      icon: "/icons/CheckCircleIcon.svg",
-      title: `${t("Card.card1.title")}`,
-      description: `${t("Card.card1.description")}`
+      icon: '/icons/CheckCircleIcon.svg',
+      title: `${t('Card.card1.title')}`,
+      description: `${t('Card.card1.description')}`,
     },
     {
-      icon: "/icons/DocumentCheckIcon.svg",
-      title: `${t("Card.card2.title")}`,
-      description: `${t("Card.card2.description")}`
+      icon: '/icons/DocumentCheckIcon.svg',
+      title: `${t('Card.card2.title')}`,
+      description: `${t('Card.card2.description')}`,
     },
     {
-      icon: "/icons/ChatBubbleLeftRightIcon.svg",
-      title: `${t("Card.card3.title")}`,
-      description: `${t("Card.card3.description")}`
+      icon: '/icons/ChatBubbleLeftRightIcon.svg',
+      title: `${t('Card.card3.title')}`,
+      description: `${t('Card.card3.description')}`,
     },
   ];
 
@@ -63,10 +62,7 @@ export default function EducacaoFinanceira() {
         />
       </section>
       <section>
-        <ThreeCardsSection
-        title={t('Card.title')}
-        cards={cardsData}
-      />
+        <ThreeCardsSection title={t('Card.title')} cards={cardsData} />
       </section>
       <section>
         <ImageWithTextSection
@@ -76,5 +72,5 @@ export default function EducacaoFinanceira() {
         />
       </section>
     </div>
-  )
+  );
 }
