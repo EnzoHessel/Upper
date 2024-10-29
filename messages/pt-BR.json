@@ -477,5 +477,10 @@
     "title": "Baixe o app e vá em \"ABRIR CONTA\"",
     "description": "Ligue a câmera do seu celular e aponte para o QR Code abaixo. Você será redirecionado para a loja de aplicativos. Aí é só baixar o app do Upper e abrir a sua conta.",
     "baixe": "BAIXE AGORA O APP"
+  },
+  "CookieBanner": {
+    "title": "Usamos cookies pra oferecer a melhor experiência e analisar o uso de nosso site. Para mais informações, consulte nossa ",
+    "politica": "Política de Segurança.",
+    "button": "FECHAR"
   }
 }

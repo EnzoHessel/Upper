@@ -8,6 +8,7 @@ import TopMenu from '@/components/top-menu';
 import MainMenu from '@/components/main-menu';
 import { Faq } from '@/components/faq';
 import Footer from '@/components/footer';
+import CookieBanner from '@/components/cookie-banner';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -62,6 +63,9 @@ export default async function RootLayout({
                 <section className={'contentPrincipal'}>
                   {children}
                   <Faq />
+                  <section className="fixed bottom-3 right-4">
+                    <CookieBanner />
+                  </section>
                 </section>
               </main>
               {/* por algumo motivo que nao sei explicar o footer so fuciona se ele estiver nessa div nas outras ele joga o header para fora */}
